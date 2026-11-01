@@ -39,6 +39,15 @@ Start with the [Reference](docs/clover-engine-reference.md); it links to every t
 
 [AnimatedImageResource](docs/api/AnimatedImageResource.md) · [AnimatedSpriteComponent](docs/api/AnimatedSpriteComponent.md) · [AnimatorComponent](docs/api/AnimatorComponent.md) · [Application](docs/api/Application.md) · [CRC64](docs/api/CRC64.md) · [CameraCaptureResource](docs/api/CameraCaptureResource.md) · [CameraComponent](docs/api/CameraComponent.md) · [CameraDevice](docs/api/CameraDevice.md) · [ClickableComponent](docs/api/ClickableComponent.md) · [Component](docs/api/Component.md) · [FileNameUtils](docs/api/FileNameUtils.md) · [FileUtils](docs/api/FileUtils.md) · [FontResource](docs/api/FontResource.md) · [ImageResource](docs/api/ImageResource.md) · [Input](docs/api/Input.md) · [LabelComponent](docs/api/LabelComponent.md) · [Localization](docs/api/Localization.md) · [MeshComponent](docs/api/MeshComponent.md) · [Object](docs/api/Object.md) · [Player](docs/api/Player.md) · [RawResource](docs/api/RawResource.md) · [RenderTargetResource](docs/api/RenderTargetResource.md) · [Resource](docs/api/Resource.md) · [Scene](docs/api/Scene.md) · [SceneAnimation](docs/api/SceneAnimation.md) · [ScriptComponent](docs/api/ScriptComponent.md) · [SoundComponent](docs/api/SoundComponent.md) · [SoundListenerComponent](docs/api/SoundListenerComponent.md) · [SoundResource](docs/api/SoundResource.md) · [SpriteAnimationResource](docs/api/SpriteAnimationResource.md) · [SpriteComponent](docs/api/SpriteComponent.md) · [SpriteResource](docs/api/SpriteResource.md) · [TextVariable](docs/api/TextVariable.md) · [TextureComponent](docs/api/TextureComponent.md) · [TextureResource](docs/api/TextureResource.md) · [TilemapComponent](docs/api/TilemapComponent.md) · [VideoComponent](docs/api/VideoComponent.md) · [VisualComponent](docs/api/VisualComponent.md) · [Volumes](docs/api/Volumes.md) · [WorldNode](docs/api/WorldNode.md)
 
+## Sources
+
+The notes are based on the stock firmware images of the three families (SNES Classic, NES Classic / Famicom Mini,
+Shonen Jump Famicom Mini) and on the open-source release that Nintendo publishes for the consoles:
+[Nintendo Open Source Software](https://support.nintendo.com/jp/oss/index.html) (the pages for the Super NES Classic
+Edition, and for the NES Classic Edition and Nintendo Classic Mini Family Computer). From that release the notes use
+the exact LuaJIT source the consoles ship (see [Lua toolchain](docs/lua-toolchain.md)) and the names and versions of
+the bundled libraries.
+
 ## What this repository does not contain
 
 No firmware, no binaries, no decompiled code or pseudocode, and no extracted game or UI assets. The engine and the

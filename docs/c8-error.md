@@ -27,7 +27,9 @@ In the NES build, where the handlers are named, the code that draws the failure 
 
 In the SNES build the same split holds for the handlers that were resolved: start-up and start-menu read the
 StartupFailed field, start-game and resume-game read the Unknown field. The inlined running/shutdown states of the large
-`execute` function were not resolved.
+`execute` function are only partly resolved (below).
+
+In the SNES `execute` function (`FUN_00017860`) the failure path sets the splash path with 14 string assignments. Thirteen copy the same context string (offset `+0x70` of the object passed in) and exactly one copies its neighbour (`+0x74`): the one for `UNABLE TO START CLOVER TEST MENU`. So the test-menu start failure does not use the same image as the menu and game failures. Which of the two strings is `Errors.Unknown` and which `Errors.StartupFailed` was not traced: the settings loader (`FUN_00020a98`) stores them at `+0xdc` and `+0xe0` of a different object, and the link to the `execute` context was not found. The caller (`FUN_00014b68`) builds that context from the desktop-entry and `X-CLOVER Settings` keys, but no assignment of the two strings at `+0x70` / `+0x74` was found in it, so they may be filled elsewhere or stay at a default.
 
 ## The 20 s timeouts
 
@@ -38,8 +40,8 @@ such wait.
 
 ## What is not established
 
-- That the timeout path ends on the `Errors.Unknown` image: in the SNES build the splash source of that inlined code was
-  not resolved. By the NES layout it should.
+- That the timeout path ends on the `Errors.Unknown` image: in the SNES build the inlined code copies a context string whose
+  identity was not traced (see above). By the NES layout it should.
 - Which of the three transition eventfds each `select()` watches. The engine's Lua layer is the writer (see [Supervisor](supervisor.md#who-writes-the-transition-eventfds)).
 - The game scan (`menu.titles.lua`) has no time limit of its own; a longer list only matters through the time the menu
   needs to load it.

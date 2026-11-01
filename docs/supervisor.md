@@ -89,8 +89,9 @@ Which failure shows which image (confirmed in the NES build: the code copies `Se
 
 In the SNES build the start-up handlers (`FUN_0001e290`, `FUN_0001d948` start menu) read the StartupFailed field
 (`+0xe0`) and start game / resume game (`FUN_0001ae98`, `FUN_0001b570`) read the Unknown field (`+0xdc`). The splash
-source of the inlined running and shutdown states in `FUN_00017860` was not resolved; by the NES layout it is
-`Errors.Unknown`.
+source of the inlined states in `FUN_00017860` is only partly resolved: 13 of its 14 splash-path assignments copy one
+context string (`+0x70`), the test-menu start failure copies the next one (`+0x74`). Which is `Errors.Unknown` was not
+traced; by the NES layout the common one should be.
 
 ## Failure messages
 

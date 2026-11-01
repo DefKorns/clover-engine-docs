@@ -160,8 +160,9 @@ framebuffer of 3 686 400 bytes after decompression.
 
 The assignment (`Settings.Unknown` or `Settings.StartupFailed` copied into the splash path) was read in the NES build
 (Machine `+0x178` from `+0xa0` / `+0xa4`) and in the SNES start-up, start-game and resume-game handlers
-(`+0xdc` / `+0xe0`). The splash source of the inlined running and shutdown states in the SNES `FUN_00017860` was not
-resolved; by the NES layout it is `Errors.Unknown`.
+(`+0xdc` / `+0xe0`). In the SNES `FUN_00017860` 13 of 14 splash-path assignments copy one context string (`+0x70`) and the
+test-menu start failure copies the next (`+0x74`); their identity was not traced, by the NES layout the common one is
+`Errors.Unknown`.
 
 Failure messages (stderr, `FATAL ERROR: ...`): `CLOVER GAME CRASHED` (also `DURING RESET`, `DURING SHUTDOWN`),
 `CLOVER MENU CRASHED` (also `DURING SHUTDOWN`), `CLOVER TEST MENU CRASHED`, `GAME TO MENU TRANSITION TIMEOUT`,
@@ -253,6 +254,7 @@ The scripts are LuaJIT 2.0 bytecode version 1, stripped (`1b 4c 4a 01 02`). The 
 
 | Compiler | Reproduces the console's `colors_eur.lua` |
 |---|---|
+| LuaJIT 2.0.4 from Nintendo's open-source release (`ext-luajit-83dda3b0...`), Linux x64 | yes, byte for byte (`-b`, `-bs`, `-bgs`) |
 | LuaJIT 2.0.2 (Windows `luajit.exe`) | yes, byte for byte (`-b` and `-bs`) |
 | LuaJIT `v2.0` at `592f9e3f5...` or `2410b57fd...`, `-bs`, Linux x64 | no (1454 bytes against 1051); same output as each other |
 
@@ -336,17 +338,20 @@ SNES EUR and USA are the same engine: identical API, 3053 of 3058 function bodie
 - **Decompilation.** REA 6.8.0 with Ghidra 12.1.4 (Docker `rea-agent-ghidra`, offline). Function names are mostly
   `FUN_xxxx`, except the NES supervisor (unstripped). Disassembly with Capstone where Ghidra did not define a function
   (the Lua binding lambdas).
-- **Lua.** `luajit-decompiler-v2` on the UI scripts; they are stripped, so locals are `slotN`.
+- **Lua.** `luajit-decompiler-v2` on the UI scripts (stripped, so locals are numbered). Used to read how the stock scripts
+  call the API, for example the transition eventfds.
+- **Open-source release.** Nintendo's published sources give the exact LuaJIT of the consoles; they do not contain the
+  supervisor or the engine.
 - **Matching across families.** Key sets of the deserializers and the names of Lua methods were compared as strings;
   a method name present in a binary does not prove it is bound to the same class.
 - **Confidence.** Confirmed: sections 4.1 to 4.4 (NES names, SNES by message), 5.1, 5.2, 5.5, 6 (SNES), 8.1 engine
-  behaviour. Inferred or partial: the splash choice in the SNES inlined states, the Shonen `id` handling, components
-  without keys.
+  behaviour. Inferred or partial: the splash choice in the SNES `execute` function, the Shonen `id` handling, components
+  without keys, method summaries of the Lua API, and the NES signatures other than `VideoComponent`.
 
 ## 11. Open questions
 
 - Which of the three transition eventfds each 20 s `select()` watches. Their writer is known: the engine's Lua layer (`mcp.startTransition`, `mcp.finishTransition`), see [supervisor.md](supervisor.md#who-writes-the-transition-eventfds).
-- The splash source of the SNES inlined running and shutdown states (by the NES layout: `Errors.Unknown`).
+- Which of the two context strings in the SNES `execute` function (`+0x70`, `+0x74`) is `Errors.Unknown` and which `Errors.StartupFailed`; the test-menu start failure alone uses the second.
 - Whether `enabled: false` in a scene reaches the same state as the run-time `disable()` call on a `SoundComponent`
   (section 8.1); not tested on a console.
 - Whether the larger bytecode of recent LuaJIT builds loads on a console; the reader of `worldUnitsPerMeter` and
