@@ -13,16 +13,16 @@ absent; keys without that note were read without a fallback, which does not prov
 
 | Key | Notes |
 |---|---|
-| `engineFormat` | **Must equal the number the engine was built for**: NES/HVC = 8, SNES = 9, Shonen = 10. A lower value is rejected with error `0x80660000`, a higher one with `0x80660001`. Checked against the Base `init.json` files: nes/hvc 8, shvc/sneseur 9, hvcj-shonen 10. |
+| `engineFormat` | **Must equal the number the engine was built for**: NES/HVC = 8, SNES = 9, Shonen = 10. A lower value is rejected with error `0x80660000`, a higher one with `0x80660001`. Checked against the stock `init.json` files: nes/hvc 8, shvc/sneseur 9, hvcj-shonen 10. |
 | `defaultScene` | Resource id of the first scene. |
 | `luaScripts` | List of script paths. The loader drops the first character of each (the leading `/`). |
 | `exportTime`, `buildName` | Optional (fall back to `"Unknown"` / empty). |
 | `virtualPlatformRegion` | Optional. |
 | `localizationRootPath`, `localizationStringFilePath`, `localePathFormats` | Strings folder, strings file (`strings.json` on NES/HVC, `strings.lng` on SNES and Shonen) and the folder patterns (`<REGION>_<LANGUAGE>`, `jpn_ja`, `usa_en`). |
 
-`worldUnitsPerMeter` and `gravity` are present in the Base files; their reader was not located.
+`worldUnitsPerMeter` and `gravity` are present in the stock `init.json` files; their reader was not located.
 
-A theme cannot move to another family by copying `init.json`: the `engineFormat` would be refused.
+An `init.json` from one family is refused by the engine of another: the `engineFormat` does not match.
 
 ## dependencies.json
 
@@ -30,8 +30,8 @@ A theme cannot move to another family by copying `init.json`: the `engineFormat`
   Resource types the loader knows: `Resource`, `TextureResource`, `RenderTargetResource`, `CameraCaptureResource`,
   `FontResource`, `SpriteSheet`, `SpriteAnimationResource`, `Scene`, `SceneAnimation`, `SoundResource`,
   `SpriteResource`, `RawResource`.
-- `resourceGroups`: list of `{ id, resourceCount, minRefCount }`. The loader reads it; the Base files ship it empty.
-  Not found in the SNES manifest of the Bases checked.
+- `resourceGroups`: list of `{ id, resourceCount, minRefCount }`. The loader reads it; the stock packages ship it empty.
+  Not found in the SNES manifest of the packages checked.
 
 ## Scene node
 

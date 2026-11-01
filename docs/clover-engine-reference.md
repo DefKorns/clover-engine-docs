@@ -39,7 +39,7 @@ clover-mcp               supervisor: display, games, lifecycle, error screens
 ReedPlayer-Clover        the engine: scene graph, components, resources, Lua VM
    |  loads
    v
-UI package (resources/)  scenes, sprites, sounds, strings, Lua scripts: the part a theme replaces
+UI package (resources/)  scenes, sprites, sounds, strings, Lua scripts: the part that defines the menu
 ```
 
 - **Supervisor.** Reads `clover-mcp.desktop`, scans the games and writes the title list for the menu, starts the
@@ -48,7 +48,7 @@ UI package (resources/)  scenes, sprites, sounds, strings, Lua scripts: the part
   a resource manager driven by `dependencies.json`, and an embedded LuaJIT 2.0.4 that runs the UI scripts
   (sections 5 to 7). It runs the menu UI and the games' own front-ends alike.
 - **UI package.** The files under `/usr/share/ui/<name>` (for example `snes-eur`, `hvc`): `init.json`, the scenes,
-  `dependencies.json`, sprites, sounds, strings and the compiled Lua. A theme replaces or overlays part of it.
+  `dependencies.json`, sprites, sounds, strings and the compiled Lua.
 
 The supervisor and the engine communicate through a command file and a state file, plus eventfds for the
 menu to game transitions (`Settings.CommandFile`, `Settings.StateFile`).
@@ -180,14 +180,14 @@ supervisor's `Errors.Unknown` image; the key `sys_error_Unexcepted` is not used 
 
 | Key | Notes |
 |---|---|
-| `engineFormat` | Must equal the engine's number: NES/HVC 8, SNES/SHVC 9, Shonen 10. Lower is rejected with `0x80660000`, higher with `0x80660001`. Checked against the Base files: nes and hvc 8, shvc and sneseur 9, hvcj-shonen 10. |
+| `engineFormat` | Must equal the engine's number: NES/HVC 8, SNES/SHVC 9, Shonen 10. Lower is rejected with `0x80660000`, higher with `0x80660001`. Checked against the stock `init.json` files: nes and hvc 8, shvc and sneseur 9, hvcj-shonen 10. |
 | `defaultScene` | Resource id of the first scene. |
 | `luaScripts` | Script paths; the loader drops the first character of each (the leading `/`). |
 | `exportTime`, `buildName` | Optional (default `"Unknown"` / empty). |
 | `virtualPlatformRegion` | Optional. |
 | `localizationRootPath`, `localizationStringFilePath`, `localePathFormats` | Strings folder, strings file (`strings.json` on NES/HVC, `strings.lng` on SNES and Shonen) and folder patterns (`<REGION>_<LANGUAGE>`, `jpn_ja`, `usa_en`). |
 
-`worldUnitsPerMeter` and `gravity` appear in the Base files; their reader was not located. Copying an `init.json`
+`worldUnitsPerMeter` and `gravity` appear in the stock `init.json` files; their reader was not located. Copying an `init.json`
 between families is refused because of `engineFormat`.
 
 ### 5.2 `dependencies.json`
@@ -195,7 +195,7 @@ between families is refused because of `engineFormat`.
 - `resources`: `{ id, type, path?, content?, contentType?, groupId, dependencies: [{ id, refCount }] }`.
   Types: `Resource`, `TextureResource`, `RenderTargetResource`, `CameraCaptureResource`, `FontResource`,
   `SpriteSheet`, `SpriteAnimationResource`, `Scene`, `SceneAnimation`, `SoundResource`, `SpriteResource`, `RawResource`.
-- `resourceGroups`: `{ id, resourceCount, minRefCount }`. Read by the engine; empty in the Bases checked.
+- `resourceGroups`: `{ id, resourceCount, minRefCount }`. Read by the engine; empty in the stock packages checked.
 
 ### 5.3 Scene node
 
@@ -253,7 +253,7 @@ The scripts are LuaJIT 2.0 bytecode version 1, stripped (`1b 4c 4a 01 02`). The 
 
 | Compiler | Reproduces the console's `colors_eur.lua` |
 |---|---|
-| `luajit.exe` 2.0.2 (Lua Compiler tool) | yes, byte for byte (`-b` and `-bs`) |
+| LuaJIT 2.0.2 (Windows `luajit.exe`) | yes, byte for byte (`-b` and `-bs`) |
 | LuaJIT `v2.0` at `592f9e3f5...` or `2410b57fd...`, `-bs`, Linux x64 | no (1454 bytes against 1051); same output as each other |
 
 One file was tested. Whether the larger bytecode loads on a console was not tested.
@@ -287,19 +287,19 @@ Android, OSX, iOS) are set by the engine before the scripts run. `TITLE_RETURN_C
 ### 8.1 Boot music (`bgm_boot`)
 
 - `defaultscene.scn` has a `SoundComponent` on `Main`, linked as `Main.bootBGM`: `/sounds/hvc/bgm_boot.wav`,
-  `autoPlay: false`, `volume: 1`. It is identical in the HVC, NES, SNES and Shonen Bases.
+  `autoPlay: false`, `volume: 1`. It is identical in the HVC, NES, SNES and Shonen stock UI packages.
 - `Main.update` waits for the main music to load; when `not bootBGM:isPlaying()` (or the sample position went back) it
   calls `mainBGM:play()` and `bootBGM:disable()`.
-- `sys_boot.lua` plays `bootSound` only if linked; the link is empty in `sys_boot.scn` in both Bases checked.
+- `sys_boot.lua` plays `bootSound` only if linked; the link is empty in `sys_boot.scn` in both packages checked.
 - The Shonen firmware calls `bootBGM:disable()` at the start of `Main.start`.
 - Engine behaviour on a component with no native sound object (SNES): `isPlaying` returns false and
   `getSamplePosition` returns `0.0`, neither raises an error. A scene with `bootBGM` disabled therefore gives the same
-  result as the Shonen `disable()` call, as far as the code shows (a theme then needs no dummy WAV).
+  result as the Shonen `disable()` call, as far as the code shows.
 
 ### 8.2 Palettes (`colors_*.lua`)
 
 Compiled Lua tables `colors_<region> = { <name> = { r, g, b, a }, ... }` (`eur`, `usa`, `jpn`). Scripts and labels refer
-to a colour by name (`colorName`). A change applies to every region's file.
+to a colour by name (`colorName`).
 
 ### 8.3 Animations
 

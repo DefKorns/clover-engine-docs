@@ -34,8 +34,5 @@ Component base: `enabled`. `ScriptComponent` reads `scriptType` and `properties`
 
 - `colorName` on a label is not read by the engine: it is a property the Lua scripts look up in the palette
   (`colors_*.lua`).
-- The engine does not mention `needs_overlay` as a string. It is not part of the engine or of the firmware: it is a
-  marker file read by the theme selector (an hmod), which uses it to know that a theme must be applied with an
-  overlay filesystem instead of a bind mount of its `resources`.
 - A SoundComponent that is disabled has no native sound object: `isPlaying` returns false instead of raising an
   error (see [boot-music.md](boot-music.md)).

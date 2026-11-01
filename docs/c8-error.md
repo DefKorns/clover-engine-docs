@@ -14,7 +14,7 @@ with REA/Ghidra, plus disassembly with Capstone. Details of the supervisor are i
   occurred". `Errors.StartupFailed` reads "C1".
 - The images are LZ4 blocks that decompress to a raw 1280x720 BGRA framebuffer.
 - The Lua UI does not show C8. Its own dialogs are C2, C4, C6, C7 and C9 (`sys_error_*` strings). The string key
-  `sys_error_Unexcepted` (C8) is not used by any script of the Base.
+  `sys_error_Unexcepted` (C8) is not used by any script of the stock UI package.
 
 ## When it appears
 

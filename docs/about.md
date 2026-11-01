@@ -6,7 +6,7 @@
 # About these notes
 
 Reverse engineering notes on the console UI engine, `ReedPlayer-Clover`, and its supervisor `clover-mcp`. They are
-for understanding the theme format. They contain no pseudocode and no binaries. Status: work in progress, kept on disk
+for understanding the engine and the format of its UI package. They contain no pseudocode and no binaries. Status: work in progress, kept on disk
 only.
 
 ## Method
@@ -17,6 +17,8 @@ only.
   2.0.14 build.
 - Lua scripts: decompiled with luajit-decompiler-v2 (the scripts are stripped LuaJIT 2.0 bytecode, header
   `1b 4c 4a 01 02`).
+- UI package files: the stock `resources/` folders of each firmware family, from extracted copies (the exact
+  versions of the NES, HVC and Shonen copies were not re-checked against the images the binaries came from).
 - Firmware versions: sneseur 2.0.14, nes 1.0.7, hvcj-shonen 3.0.1 decompiled; snesusa, shvc, hvc extracted only.
 
 ## Confidence
