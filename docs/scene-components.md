@@ -1,10 +1,15 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # Scene components (.scn)
 
 Source: the component deserializers of `ReedPlayer-Clover` (SNES EUR 2.0.14, decompiled with REA/Ghidra). Each one reads
 JSON keys into fields of the component. Types come from the helper each call uses (bool, float, int, resource id).
 The key names were read from the strings in the data section.
 
-The same 15 component types exist in the SNES, NES and Shonen engines; see `family-differences.md`.
+The same 15 component types exist in the SNES, NES and Shonen engines; see [family-differences.md](family-differences.md).
 
 | Component | Keys read by the engine |
 |---|---|
@@ -33,4 +38,4 @@ Component base: `enabled`. `ScriptComponent` reads `scriptType` and `properties`
   marker file read by the theme selector (an hmod), which uses it to know that a theme must be applied with an
   overlay filesystem instead of a bind mount of its `resources`.
 - A SoundComponent that is disabled has no native sound object: `isPlaying` returns false instead of raising an
-  error (see `boot-music.md`).
+  error (see [boot-music.md](boot-music.md)).

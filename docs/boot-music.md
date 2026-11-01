@@ -1,3 +1,8 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # Boot music (bgm_boot)
 
 Evidence: `main.lua` and `sys_boot.lua` of the SNES EUR and Shonen Bases (decompiled with luajit-decompiler), and

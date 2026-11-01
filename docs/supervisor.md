@@ -1,3 +1,8 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # The supervisor (clover-mcp)
 
 `/usr/bin/clover-mcp` starts first. It owns the screen and the process lifecycle: it scans the games, starts the menu

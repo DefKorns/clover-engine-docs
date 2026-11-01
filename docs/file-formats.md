@@ -1,3 +1,8 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # File formats read by the engine
 
 Source: the loaders of `ReedPlayer-Clover` (SNES EUR 2.0.14 decompiled with REA/Ghidra; NES 1.0.7 and Shonen 3.0.1
@@ -55,7 +60,7 @@ Each track: `worldNodePath`, `componentType`, `propertyId`, `scriptPropertyName`
 
 ## Components
 
-See `scene-components.md` for the keys per component. The Camera deserializer reads `viewportRect`, `order`,
+See [scene-components.md](scene-components.md) for the keys per component. The Camera deserializer reads `viewportRect`, `order`,
 `clearScreen`, `clearColor`, `categoryMask`, `targetScreen`, `renderTarget`; the Clickable one reads `layer`,
 `center`, `clickCallbackComponent`, `shape` and, per shape, `width`, `height` or `radius`.
 

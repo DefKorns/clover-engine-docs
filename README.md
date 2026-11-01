@@ -1,20 +1,43 @@
 # Clover engine documentation
 
 Reverse engineering notes on the console UI stack of the SNES Classic, NES Classic, Famicom Mini and the Shonen Jump
-Famicom Mini: the supervisor `clover-mcp`, the engine `ReedPlayer-Clover`, the UI package formats and the Lua API the
-engine exposes.
+Famicom Mini: the supervisor `clover-mcp`, the engine `ReedPlayer-Clover`, the UI package formats and the Lua API.
 
-Open `docs/index.html` in a browser for the readable version (it is one self-contained file). The reference page is
-`docs/clover-engine-reference.md`.
+Start with the [Reference](docs/clover-engine-reference.md); it links to every topic below.
 
-## Contents
+## Pages
 
-| Path | What |
+| Page | What it covers |
 |---|---|
-| `docs/clover-engine-reference.md` | The complete reference: architecture, supervisor, file formats, components, Lua layer, subsystems, family differences. |
-| `docs/lua-api.md`, `docs/lua-api.json` | Every Lua class and method with its signature and the families that bind it. |
-| `docs/supervisor.md`, `file-formats.md`, `scene-components.md`, `boot-music.md`, `c8-error.md`, `family-differences.md`, `lua-toolchain.md` | Topic pages. |
-| `docs/index.html` | Viewer with all the pages and an interactive API explorer (one self-contained file). |
+| [Reference](docs/clover-engine-reference.md) | The complete reference: architecture, supervisor, formats, components, Lua layer, subsystems. |
+| [Supervisor](docs/supervisor.md) | clover-mcp: state machine, settings, game scan, splash and error screens. |
+| [File formats](docs/file-formats.md) | init.json, dependencies.json, nodes, textures, animation tracks, strings. |
+| [Scene components](docs/scene-components.md) | The keys each component reads from a .scn file. |
+| [Lua API](docs/api/README.md) | Every Lua class and method, one page per class. |
+| [Boot music](docs/boot-music.md) | How bgm_boot plays and how it can be silenced. |
+| [Error C8](docs/c8-error.md) | What the C8 screen is and when it appears. |
+| [Family differences](docs/family-differences.md) | SNES, NES and Shonen compared. |
+| [Lua toolchain](docs/lua-toolchain.md) | Which LuaJIT reproduces the console bytecode. |
+| [About](docs/about.md) | Method, tools and confidence. |
+
+## Reference sections
+
+1. [Architecture](docs/clover-engine-reference.md#1-architecture)
+2. [Firmware and families](docs/clover-engine-reference.md#2-firmware-and-families)
+3. [Boot and process lifecycle](docs/clover-engine-reference.md#3-boot-and-process-lifecycle)
+4. [The supervisor (clover-mcp)](docs/clover-engine-reference.md#4-the-supervisor-clover-mcp)
+5. [The UI package: files and formats](docs/clover-engine-reference.md#5-the-ui-package-files-and-formats)
+6. [Scene components](docs/clover-engine-reference.md#6-scene-components)
+7. [The Lua layer](docs/clover-engine-reference.md#7-the-lua-layer)
+8. [Subsystems](docs/clover-engine-reference.md#8-subsystems)
+9. [Family differences at a glance](docs/clover-engine-reference.md#9-family-differences-at-a-glance)
+10. [Method and confidence](docs/clover-engine-reference.md#10-method-and-confidence)
+11. [Open questions](docs/clover-engine-reference.md#11-open-questions)
+12. [Appendices](docs/clover-engine-reference.md#12-appendices)
+
+## Lua API classes
+
+[AnimatedImageResource](docs/api/AnimatedImageResource.md) · [AnimatedSpriteComponent](docs/api/AnimatedSpriteComponent.md) · [AnimatorComponent](docs/api/AnimatorComponent.md) · [Application](docs/api/Application.md) · [CRC64](docs/api/CRC64.md) · [CameraCaptureResource](docs/api/CameraCaptureResource.md) · [CameraComponent](docs/api/CameraComponent.md) · [CameraDevice](docs/api/CameraDevice.md) · [ClickableComponent](docs/api/ClickableComponent.md) · [Component](docs/api/Component.md) · [FileNameUtils](docs/api/FileNameUtils.md) · [FileUtils](docs/api/FileUtils.md) · [FontResource](docs/api/FontResource.md) · [ImageResource](docs/api/ImageResource.md) · [Input](docs/api/Input.md) · [LabelComponent](docs/api/LabelComponent.md) · [Localization](docs/api/Localization.md) · [MeshComponent](docs/api/MeshComponent.md) · [Object](docs/api/Object.md) · [Player](docs/api/Player.md) · [RawResource](docs/api/RawResource.md) · [RenderTargetResource](docs/api/RenderTargetResource.md) · [Resource](docs/api/Resource.md) · [Scene](docs/api/Scene.md) · [SceneAnimation](docs/api/SceneAnimation.md) · [ScriptComponent](docs/api/ScriptComponent.md) · [SoundComponent](docs/api/SoundComponent.md) · [SoundListenerComponent](docs/api/SoundListenerComponent.md) · [SoundResource](docs/api/SoundResource.md) · [SpriteAnimationResource](docs/api/SpriteAnimationResource.md) · [SpriteComponent](docs/api/SpriteComponent.md) · [SpriteResource](docs/api/SpriteResource.md) · [TextVariable](docs/api/TextVariable.md) · [TextureComponent](docs/api/TextureComponent.md) · [TextureResource](docs/api/TextureResource.md) · [TilemapComponent](docs/api/TilemapComponent.md) · [VideoComponent](docs/api/VideoComponent.md) · [VisualComponent](docs/api/VisualComponent.md) · [Volumes](docs/api/Volumes.md) · [WorldNode](docs/api/WorldNode.md)
 
 ## What this repository does not contain
 
@@ -22,9 +45,4 @@ No firmware, no binaries, no decompiled code or pseudocode, and no extracted gam
 firmware belong to Nintendo. The notes describe formats, interfaces and behaviour, and cite function addresses of the
 analysed builds as evidence. No license is set.
 
-## Method and confidence
-
-Binaries come from the stock firmware images: SNES EUR 2.0.14, SNES USA 2.0.14, SHVC 2.0.14, NES 1.0.7, HVC 1.0.5 and
-Shonen 3.0.1. They were decompiled with REA 6.8.0 (Ghidra 12.1.4, Docker image `rea-agent-ghidra`, offline), with
-Capstone for the Lua binding lambdas Ghidra did not define as functions. Each page says what the code shows and what is
-inferred or untested. Nothing was run on a console.
+Machine-readable API data: [`docs/lua-api.json`](docs/lua-api.json).

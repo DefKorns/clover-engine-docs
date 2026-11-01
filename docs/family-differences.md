@@ -1,3 +1,8 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # SNES, NES and Shonen engines compared
 
 Binaries (all `ReedPlayer-Clover`, ARM 32-bit ELF):
@@ -27,7 +32,7 @@ rejected). The scene animation tracks of the NES engine have no `scriptPropertyS
 
 ## Lua API differences
 
-From the binding tables of each engine (`lua-api.md`, 40 classes and 436 methods in total). SNES, SNES USA and SHVC share the
+From the binding tables of each engine ([Lua API](api/README.md), 40 classes and 436 methods in total). SNES, SNES USA and SHVC share the
 same API, as do NES and HVC.
 
 | Bound in | Count | Methods |
@@ -56,6 +61,6 @@ Compared function by function (the best-matching deserializer of each engine for
 
 ## Supervisor
 
-All three supervisors were decompiled (NES unstripped). Differences, from `supervisor.md`: the NES one has no 20 s
+All three supervisors were decompiled (NES unstripped). Differences, from [supervisor.md](supervisor.md): the NES one has no 20 s
 transition timeouts and no `CLOVER GAME CRASHED` message; the SNES and Shonen ones share the timeouts; Shonen adds
 `Game.FastTransition`.

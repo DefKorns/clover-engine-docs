@@ -1,7 +1,12 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # Error C8
 
 Evidence: stock firmwares, supervisor `clover-mcp` (SNES EUR 2.0.14, NES 1.0.7 unstripped, Shonen 3.0.1), decompiled
-with REA/Ghidra, plus disassembly with Capstone. Details of the supervisor are in `supervisor.md`.
+with REA/Ghidra, plus disassembly with Capstone. Details of the supervisor are in [supervisor.md](supervisor.md).
 
 ## What C8 is (confirmed)
 

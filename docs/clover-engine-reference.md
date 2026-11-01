@@ -1,3 +1,8 @@
+<!-- nav -->
+[Home](../README.md) · [Reference](clover-engine-reference.md) · [Supervisor](supervisor.md) · [File formats](file-formats.md) · [Scene components](scene-components.md) · [Lua API](api/README.md) · [Boot music](boot-music.md) · [Error C8](c8-error.md) · [Family differences](family-differences.md) · [Lua toolchain](lua-toolchain.md) · [About](about.md)
+
+---
+
 # Clover engine reference
 
 The console UI stack of the SNES Classic, NES Classic, Famicom Mini and the Shonen Jump Famicom Mini: what runs, which
@@ -256,7 +261,7 @@ One file was tested. Whether the larger bytecode loads on a console was not test
 ### 7.2 API exposed by the engine
 
 40 classes and 436 methods across the three engines; the full reference, with the signature of each method and the
-families that bind it, is in `lua-api.md` (interactive: the *API explorer* page of `index.html`). The core of it:
+families that bind it, is in [Lua API](api/README.md) (one page per class). The core of it:
 
 | Class | Role |
 |---|---|
@@ -348,6 +353,6 @@ SNES EUR and USA are the same engine: identical API, 3053 of 3058 function bodie
 
 ## 12. Appendices
 
-- `lua-api.md`: the full class and method tables, with the families that have each method.
-- `scene-components.md`, `file-formats.md`, `supervisor.md`, `boot-music.md`, `c8-error.md`, `family-differences.md`,
-  `lua-toolchain.md`: the topic pages this reference condenses.
+- [Lua API](api/README.md): every class and method with its signature and the families that bind it, one page per class.
+- [scene-components.md](scene-components.md), [file-formats.md](file-formats.md), [supervisor.md](supervisor.md), [boot-music.md](boot-music.md), [c8-error.md](c8-error.md), [family-differences.md](family-differences.md),
+  [lua-toolchain.md](lua-toolchain.md): the topic pages this reference condenses.
