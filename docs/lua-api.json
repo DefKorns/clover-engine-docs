@@ -1,0 +1,11063 @@
+{
+ "AnimatedImageResource": [
+  {
+   "method": "getFrameCount",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the frame count.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe8a40"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  }
+ ],
+ "AnimatedSpriteComponent": [
+  {
+   "method": "animEnded",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls anim ended.",
+   "note": "",
+   "families": {
+    "SNES": "0xaca44",
+    "NES": "0xfcc78",
+    "Shonen": "0xed13c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "changeAnimation",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "SpriteAnimationResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls change animation.",
+   "note": "",
+   "families": {
+    "SNES": "0xacb98",
+    "NES": "0xdfdcc",
+    "Shonen": "0xed214"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xac3ec",
+    "NES": "0x115030",
+    "Shonen": "0xe87a8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getAnchor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the anchor.",
+   "note": "",
+   "families": {
+    "SNES": "0xac67c",
+    "NES": "0xfa920",
+    "Shonen": "0xecd5c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSpriteAnimation",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the sprite animation.",
+   "note": "",
+   "families": {
+    "SNES": "0xaccb8",
+    "NES": "0x112e54",
+    "Shonen": "0xecddc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "increaseTime",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls increase time.",
+   "note": "",
+   "families": {
+    "SNES": "0xacda0",
+    "NES": "0xfc298",
+    "Shonen": "0xed334"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "isAutoUpdated",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether auto updated.",
+   "note": "",
+   "families": {
+    "SNES": "0xac97c",
+    "NES": "0xf2904",
+    "Shonen": "0xecf2c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isFlippedHorizontal",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether flipped horizontal.",
+   "note": "",
+   "families": {
+    "SNES": "0xac914",
+    "NES": "0xf20a0",
+    "Shonen": "0xeccf4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isFlippedVertical",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether flipped vertical.",
+   "note": "",
+   "families": {
+    "SNES": "0xac8ac",
+    "NES": "0xf1ee4",
+    "Shonen": "0xecc8c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isLooped",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether looped.",
+   "note": "",
+   "families": {
+    "SNES": "0xac9e0",
+    "NES": "0xf2748",
+    "Shonen": "0xecff8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "restart",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls restart.",
+   "note": "",
+   "families": {
+    "SNES": "0xacab0",
+    "NES": "0xf240c",
+    "Shonen": "0xed1a8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setAutoUpdate",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "autoUpdate",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the auto update.",
+   "note": "",
+   "families": {
+    "SNES": "0xac6fc",
+    "NES": "0xfc760",
+    "Shonen": "0xecec4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFlipHorizontal",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "flipHorizontal",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the flip horizontal.",
+   "note": "",
+   "families": {
+    "SNES": "0xac83c",
+    "NES": "0xfa754",
+    "Shonen": "0xed0cc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFlipVertical",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "flipVertical",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the flip vertical.",
+   "note": "",
+   "families": {
+    "SNES": "0xac7cc",
+    "NES": "0xfa588",
+    "Shonen": "0xed05c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLoop",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "loop",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the loop.",
+   "note": "",
+   "families": {
+    "SNES": "0xac764",
+    "NES": "0xfc920",
+    "Shonen": "0xecf90"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSpriteAnimation",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "spriteAnimation",
+     "type": "SpriteAnimationResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the sprite animation.",
+   "note": "",
+   "families": {
+    "SNES": "0xacc48",
+    "NES": "0x10149c",
+    "Shonen": "0xed2c4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "AnimatorComponent": [
+  {
+   "method": "advanceCurrentTime",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls advance current time.",
+   "note": "",
+   "families": {
+    "SNES": "0xa84b0",
+    "NES": "0x104e40",
+    "Shonen": "0xe8154"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "callEventHandlers",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls call event handlers.",
+   "note": "",
+   "families": {
+    "SNES": "0xa82a8",
+    "NES": "0x104ab0",
+    "Shonen": "0xe7b50"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa78a0",
+    "NES": "0x1152f0",
+    "Shonen": "0xe8460"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getCurrentTime",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the current time.",
+   "note": "",
+   "families": {
+    "SNES": "0xa808c",
+    "NES": "0xf966c",
+    "Shonen": "0xe7dd8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getDuration",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the duration.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7dc8",
+    "NES": "0xf9030",
+    "Shonen": "0xe7d58"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getEventListener",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the event listener.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7d50",
+    "NES": "0xf9350",
+    "Shonen": "0xe4230"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSceneAnimation",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the scene animation.",
+   "note": "",
+   "families": {
+    "SNES": "0xa81c0",
+    "NES": "0x113364",
+    "Shonen": "0xe8378"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSpeed",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the speed.",
+   "note": "",
+   "families": {
+    "SNES": "0xa80f4",
+    "NES": "0xf94e8",
+    "Shonen": "0xe7e40"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isLooped",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether looped.",
+   "note": "",
+   "families": {
+    "SNES": "0xa815c",
+    "NES": "0xf9db8",
+    "Shonen": "0xe80f0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isPaused",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether paused.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7f64",
+    "NES": "0xf8464",
+    "Shonen": "0xe7fc8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isPlaying",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether playing.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7ff8",
+    "NES": "0xf8290",
+    "Shonen": "0xe805c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isStopped",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether stopped.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7efc",
+    "NES": "0xf9bfc",
+    "Shonen": "0xe7f60"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "play",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls play.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7ea0",
+    "NES": "0xfac3c",
+    "Shonen": "0xe7c34"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "replay",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls replay.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8450",
+    "NES": "0xd508c",
+    "Shonen": "0xe7f00"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "reset",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls reset.",
+   "note": "",
+   "families": {
+    "SNES": "0xa83f8",
+    "NES": "0xd516c",
+    "Shonen": "0xe7ea8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "resolveBindings",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls resolve bindings.",
+   "note": "",
+   "families": {
+    "SNES": "0xa83a0",
+    "NES": "0xd5244",
+    "Shonen": "0xe7cfc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setCurrentTime",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "currentTime",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the current time.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8520",
+    "NES": "0xd4f70",
+    "Shonen": "0xe81c4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setEventListener",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "eventListener",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the event listener.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7ce8",
+    "NES": "0xf6460",
+    "Shonen": "0xe74a8"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLoop",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "loop",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the loop.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8590",
+    "NES": "0xf7f14",
+    "Shonen": "0xe8234"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSceneAnimation",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "sceneAnimation",
+     "type": "SceneAnimation"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the scene animation.",
+   "note": "",
+   "families": {
+    "SNES": "0xa85f8",
+    "NES": "0xd4d2c",
+    "Shonen": "0xe829c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSpeed",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "speed",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the speed.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8334",
+    "NES": "0xf91d0",
+    "Shonen": "0xe7c90"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "stop",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls stop.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7e48",
+    "NES": "0xfb2e4",
+    "Shonen": "0xe7bdc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "Application": [
+  {
+   "method": "abort",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls abort.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3810"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "captureScreen",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "string"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls capture screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1fe8",
+    "NES": "0xc6ac0",
+    "Shonen": "0xf2a90"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "eventFdRead",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    }
+   ],
+   "returns": [
+    "integer",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls event fd read.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2d58",
+    "NES": null,
+    "Shonen": "0xf3784"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "eventFdWrite",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Calls event fd write.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2cdc",
+    "NES": null,
+    "Shonen": "0xf3708"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": null,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "exit",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls exit.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2de4",
+    "NES": "0xe820c",
+    "Shonen": "0xf3840"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getDataPath",
+   "kind": "get",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the data path.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2e68",
+    "NES": "0xb962c",
+    "Shonen": "0xf3970"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getErrorHandler",
+   "kind": "get",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the error handler.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe263c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getExitHandler",
+   "kind": "get",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the exit handler.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2a30",
+    "NES": "0xd9c28",
+    "Shonen": "0xe26b0"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getMaxFPS",
+   "kind": "get",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the max fps.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1efc",
+    "NES": "0xb4598",
+    "Shonen": "0xf29a8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getResourcesPath",
+   "kind": "get",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the resources path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf38c4"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "pause",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls pause.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1fa0",
+    "NES": "0xe8368",
+    "Shonen": "0xf2a4c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "resetErrorHandler",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls reset error handler.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe2600"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "resetExitHandler",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls reset exit handler.",
+   "note": "",
+   "families": {
+    "SNES": "0xa29cc",
+    "NES": "0xd1334",
+    "Shonen": "0xe2724"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setErrorHandler",
+   "kind": "set",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the error handler.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe6f6c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setExitHandler",
+   "kind": "set",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the exit handler.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2ab4",
+    "NES": "0xd1504",
+    "Shonen": "0xe2788"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setMaxFPS",
+   "kind": "set",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "maxFPS",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the max fps.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1e8c",
+    "NES": "0xe7f70",
+    "Shonen": "0xf2938"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "skipDraw",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls skip draw.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1e4c",
+    "NES": null,
+    "Shonen": "0xf28f8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "unpause",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls unpause.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1f5c",
+    "NES": "0xe84a0",
+    "Shonen": "0xf2a08"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "CRC64": [
+  {
+   "method": "hash",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls hash.",
+   "note": "",
+   "families": {
+    "SNES": "0xb31b0",
+    "NES": "0xbacd0",
+    "Shonen": "0xf3c30"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "CameraCaptureResource": [
+  {
+   "method": "getCameraSource",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the camera source.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xbd5bc",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getPixel",
+   "kind": "get",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the pixel.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb37d0",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 2,
+    "Shonen": null
+   }
+  }
+ ],
+ "CameraComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7944",
+    "NES": "0x115240",
+    "Shonen": "0xe8508"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getCategoryMask",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the category mask.",
+   "note": "",
+   "families": {
+    "SNES": "0xa98d0",
+    "NES": "0xfceb4",
+    "Shonen": "0xe9bc4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getClearColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the clear color.",
+   "note": "",
+   "families": {
+    "SNES": "0xa99f4",
+    "NES": "0xf6fe4",
+    "Shonen": "0xe9ce8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getClearScreen",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns the clear screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9af8",
+    "NES": "0xfd4e0",
+    "Shonen": "0xe9dec"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getFrontCameraRenderingAtViewPoint",
+   "kind": "get",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the front camera rendering at view point.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe9904"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "getOrder",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the order.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9b5c",
+    "NES": "0xfdc00",
+    "Shonen": "0xe9e50"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getRenderTarget",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the render target.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9780",
+    "NES": "0x113154",
+    "Shonen": "0xe9f48"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTargetScreen",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the target screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9c54",
+    "NES": "0xfda58",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getTargetSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the target size.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe9ae8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTargetView",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the target view.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xea030"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getViewportRect",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the viewport rect.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9bc0",
+    "NES": "0xf8638",
+    "Shonen": "0xe9eb4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "screenToWorldPosition",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls screen to world position.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9df8",
+    "NES": "0xd43c4",
+    "Shonen": "0xea098"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setCategoryMask",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "categoryMask",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the category mask.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9868",
+    "NES": "0xfd364",
+    "Shonen": "0xe9b5c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setClearColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the clear color.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9938",
+    "NES": "0xf66c8",
+    "Shonen": "0xe9c2c"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setClearScreen",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "clearScreen",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the clear screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9a90",
+    "NES": "0xfc0d8",
+    "Shonen": "0xe9d84"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setOrder",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "order",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the order.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9ebc",
+    "NES": "0xfbacc",
+    "Shonen": "0xea15c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setRenderTarget",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "renderTarget",
+     "type": "RenderTargetResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the render target.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9710",
+    "NES": "0xd4774",
+    "Shonen": "0xea290"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTargetScreen",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "targetScreen",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the target screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9fe8",
+    "NES": "0xfb5f8",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setTargetView",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "targetView",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the target view.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xea388"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setViewportRect",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the viewport rect.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9f2c",
+    "NES": "0x101f58",
+    "Shonen": "0xea1cc"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "worldToScreenPosition",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls world to screen position.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9cb8",
+    "NES": "0xd4578",
+    "Shonen": "0xe9a24"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  }
+ ],
+ "CameraDevice": [
+  {
+   "method": "getTextureCoordinates",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the texture coordinates.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb44c0",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "isStarted",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns whether started.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xbeb38",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setEffect",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "effect",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the effect.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb43e0",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setFramerate",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "framerate",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the framerate.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb4300",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setResolution",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the resolution.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb4218",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 2,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "start",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls start.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb3fc8",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "stop",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls stop.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xb40f0",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  }
+ ],
+ "ClickableComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8cd8",
+    "NES": "0x115190",
+    "Shonen": "0xe9040"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getAutoRaycastMask",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the auto raycast mask.",
+   "note": "",
+   "families": {
+    "SNES": "0xa891c",
+    "NES": "0xb46f0",
+    "Shonen": "0xe8c84"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getBoxShapeSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the box shape size.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9050",
+    "NES": "0xf9f74",
+    "Shonen": "0xe9354"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getCenter",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the center.",
+   "note": "",
+   "families": {
+    "SNES": "0xa91ec",
+    "NES": "0xfa110",
+    "Shonen": "0xe94f0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getCircleShapeRadius",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the circle shape radius.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8f74",
+    "NES": "0xfd1e0",
+    "Shonen": "0xe9278"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getClickListener",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the click listener.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8efc",
+    "NES": "0xfcae0",
+    "Shonen": "0xe9200"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLayer",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the layer.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9534",
+    "NES": "0xfdf50",
+    "Shonen": "0xe98a0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getShapeType",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the shape type.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9408",
+    "NES": "0xfe0f8",
+    "Shonen": "0xe9774"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xa946c",
+    "NES": "0xfe2a0",
+    "Shonen": "0xe97d8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xa94d0",
+    "NES": "0xfdda8",
+    "Shonen": "0xe983c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "hitTest",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls hit test.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8df4",
+    "NES": "0xd49fc",
+    "Shonen": "0xe9160"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "raycastAll",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "array"
+   ],
+   "typed": true,
+   "summary": "Calls raycast all.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8ab8",
+    "NES": "0x10657c",
+    "Shonen": "0xe8e20"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "raycastAllInCategories",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "array"
+   ],
+   "typed": true,
+   "summary": "Calls raycast all in categories.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8964",
+    "NES": "0x106dd8",
+    "Shonen": "0xe8ccc"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "raycastNearest",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls raycast nearest.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8be4",
+    "NES": "0xc309c",
+    "Shonen": "0xe8f4c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "raycastNearestInCategories",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls raycast nearest in categories.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8d5c",
+    "NES": "0xc2ee0",
+    "Shonen": "0xe90c8"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setAutoRaycastMask",
+   "kind": "set",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the auto raycast mask.",
+   "note": "",
+   "families": {
+    "SNES": "0xa88c8",
+    "NES": "0xe85d8",
+    "Shonen": "0xe8c30"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setBoxShape",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the box shape.",
+   "note": "",
+   "families": {
+    "SNES": "0xa90cc",
+    "NES": "0xfaa94",
+    "Shonen": "0xe93d0"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setCenter",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the center.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9160",
+    "NES": "0xf97f0",
+    "Shonen": "0xe9464"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setCircleShape",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "circleShape",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the circle shape.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8fdc",
+    "NES": "0xfc5d8",
+    "Shonen": "0xe92e0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setClickListener",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "clickListener",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the click listener.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8e94",
+    "NES": "0xf9994",
+    "Shonen": "0xe970c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLayer",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "layer",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the layer.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9380",
+    "NES": "0xfb45c",
+    "Shonen": "0xe9684"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWorldZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "worldZIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9260",
+    "NES": "0xfadb8",
+    "Shonen": "0xe9564"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "zIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xa92f8",
+    "NES": "0xfb7b8",
+    "Shonen": "0xe95fc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "Component": [
+  {
+   "method": "disable",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls disable.",
+   "note": "Disables the component. The boot music (Main.bootBGM) is disabled this way by main.lua and by the Shonen firmware.",
+   "families": {
+    "SNES": "0xb1a90",
+    "NES": "0xf38b4",
+    "Shonen": "0xf21f4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "enable",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls enable.",
+   "note": "Enables the component.",
+   "families": {
+    "SNES": "0xb1aec",
+    "NES": "0xf3564",
+    "Shonen": "0xf2250"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1628",
+    "NES": "0xf4164",
+    "Shonen": "0xf1f34"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTypeName",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "string"
+   ],
+   "typed": true,
+   "summary": "Returns the type name.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1bbc",
+    "NES": "0xf4304",
+    "Shonen": "0xf1bb0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isActive",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether active.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1170",
+    "NES": "0xf3f9c",
+    "Shonen": "0xf1a58"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isEnabled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1254",
+    "NES": "0xf370c",
+    "Shonen": "0xf1b3c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isSelfEnabled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether self enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb11e8",
+    "NES": "0xf3dd8",
+    "Shonen": "0xf1ad0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setEnabled",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "enabled",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1b48",
+    "NES": "0xfd830",
+    "Shonen": "0xf22ac"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "FileNameUtils": [
+  {
+   "method": "concat",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls concat.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3cac"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getBasename",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the basename.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3f38"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPath",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf401c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPrefix",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the prefix.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3e90"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPrefixLength",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the prefix length.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3e18"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "normalize",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls normalize.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf3d80"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  }
+ ],
+ "FileUtils": [
+  {
+   "method": "cleanupPath",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls cleanup path.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5acc",
+    "NES": "0xbabbc",
+    "Shonen": "0xe5e34"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "copyDirectory",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls copy directory.",
+   "note": "",
+   "families": {
+    "SNES": "0xa518c",
+    "NES": null,
+    "Shonen": "0xe54f4"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": null,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "copyDirectoryAsync",
+   "kind": "do",
+   "static": true,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    },
+    {
+     "name": "arg4",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls copy directory async.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4e14",
+    "NES": null,
+    "Shonen": "0xe5198"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": null,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "copyFile",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls copy file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa69d0",
+    "NES": "0xcc470",
+    "Shonen": "0xe6e48"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "copyFileAsync",
+   "kind": "do",
+   "static": true,
+   "args": 6,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "boolean"
+    },
+    {
+     "name": "arg2",
+     "type": "boolean"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    },
+    {
+     "name": "arg4",
+     "type": "any"
+    },
+    {
+     "name": "arg5",
+     "type": "any"
+    },
+    {
+     "name": "arg6",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls copy file async.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4f60",
+    "NES": null,
+    "Shonen": "0xe52d8"
+   },
+   "arity": {
+    "SNES": 6,
+    "NES": null,
+    "Shonen": 6
+   }
+  },
+  {
+   "method": "createDirectory",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls create directory.",
+   "note": "",
+   "families": {
+    "SNES": "0xa52d0",
+    "NES": null,
+    "Shonen": "0xe5638"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "deleteDirectory",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls delete directory.",
+   "note": "",
+   "families": {
+    "SNES": "0xa524c",
+    "NES": "0xbbe34",
+    "Shonen": "0xe55b4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "deleteFile",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls delete file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa53e4",
+    "NES": "0xbbef4",
+    "Shonen": "0xe574c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "directoryExists",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls directory exists.",
+   "note": "",
+   "families": {
+    "SNES": "0xa535c",
+    "NES": null,
+    "Shonen": "0xe56c4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "fileExists",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls file exists.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5b64",
+    "NES": "0xbbc74",
+    "Shonen": "0xe5ecc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "listDirectories",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls list directories.",
+   "note": "",
+   "families": {
+    "SNES": "0xa589c",
+    "NES": "0x107378",
+    "Shonen": "0xe5c04"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "listDirectoryFiles",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls list directory files.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5a00",
+    "NES": "0x107104",
+    "Shonen": "0xe5d68"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "listDirectoryFilesByExt",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls list directory files by ext.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5930",
+    "NES": "0x108f6c",
+    "Shonen": "0xe5c98"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "readFile",
+   "kind": "do",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls read file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa569c",
+    "NES": "0xb9cc4",
+    "Shonen": "0xe5a04"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "renameDirectory",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls rename directory.",
+   "note": "",
+   "families": {
+    "SNES": "0xa50dc",
+    "NES": null,
+    "Shonen": "0xe5448"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": null,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "renameFile",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls rename file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5468",
+    "NES": "0xcc700",
+    "Shonen": "0xe57d0"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "writeFile",
+   "kind": "do",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Calls write file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5534",
+    "NES": null,
+    "Shonen": "0xe589c"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": null,
+    "Shonen": 2
+   }
+  }
+ ],
+ "FontResource": [
+  {
+   "method": "getBaselineOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the baseline offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xab1bc",
+    "NES": "0xbd36c",
+    "Shonen": "0xeb55c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLineHeight",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the line height.",
+   "note": "",
+   "families": {
+    "SNES": "0xab224",
+    "NES": "0xbcecc",
+    "Shonen": "0xeb5c4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSpaceSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the space size.",
+   "note": "",
+   "families": {
+    "SNES": "0xab154",
+    "NES": "0xbd11c",
+    "Shonen": "0xeb4f4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "ImageResource": [
+  {
+   "method": "getPixel",
+   "kind": "get",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pixel.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3504",
+    "NES": "0xb3570",
+    "Shonen": "0xecba8"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xa35f0",
+    "NES": "0xbdfdc",
+    "Shonen": "0xec670"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "readPixel",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls read pixel.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xecad8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "reloadFromFile",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls reload from file.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3678",
+    "NES": "0xb8a70",
+    "Shonen": "0xec6f8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "Input": [
+  {
+   "method": "freeze",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls freeze.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2988",
+    "NES": "0xe8e38",
+    "Shonen": "0xe2194"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getPreviousState",
+   "kind": "get",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the previous state.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2d98",
+    "NES": "0xb3b90",
+    "Shonen": "0xe2b0c"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "getState",
+   "kind": "get",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the state.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2e20",
+    "NES": "0xb3a30",
+    "Shonen": "0xe2b90"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "getStateDelta",
+   "kind": "get",
+   "static": true,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the state delta.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2d30",
+    "NES": "0xb3cf0",
+    "Shonen": "0xe2aa4"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "isConnected",
+   "kind": "get",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether connected.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2cac",
+    "NES": "0xbda88",
+    "Shonen": "0xe2a20"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setPreviousState",
+   "kind": "set",
+   "static": true,
+   "args": 3,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the previous state.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2b7c",
+    "NES": "0xe7d18",
+    "Shonen": "0xe28f0"
+   },
+   "arity": {
+    "SNES": 3,
+    "NES": 3,
+    "Shonen": 3
+   }
+  },
+  {
+   "method": "setState",
+   "kind": "set",
+   "static": true,
+   "args": 3,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the state.",
+   "note": "",
+   "families": {
+    "SNES": "0xa2c14",
+    "NES": "0xe7e44",
+    "Shonen": "0xe2988"
+   },
+   "arity": {
+    "SNES": 3,
+    "NES": 3,
+    "Shonen": 3
+   }
+  },
+  {
+   "method": "touchToViewPoint",
+   "kind": "do",
+   "static": true,
+   "args": 3,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "integer",
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Calls touch to view point.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe2850"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 3
+   }
+  }
+ ],
+ "LabelComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa79e8",
+    "NES": "0x114d70",
+    "Shonen": "0xe85b0"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getBottomColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the bottom color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa644",
+    "NES": "0xdb49c",
+    "Shonen": "0xea9e4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getCharacterSpacingOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the character spacing offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaaab4",
+    "NES": "0xe06fc",
+    "Shonen": "0xeae54"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getFlags",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the flags.",
+   "note": "",
+   "families": {
+    "SNES": "0xaacdc",
+    "NES": "0xdb038",
+    "Shonen": "0xeb07c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getFontResource",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the font resource.",
+   "note": "",
+   "families": {
+    "SNES": "0xaad44",
+    "NES": "0x113064",
+    "Shonen": "0xeb0e4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLineHeightOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the line height offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa9d8",
+    "NES": "0xe0788",
+    "Shonen": "0xead78"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPivot",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pivot.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa058",
+    "NES": "0xdb970",
+    "Shonen": "0xea3f8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getShadowColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the shadow color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa310",
+    "NES": "0xdb738",
+    "Shonen": "0xea6b0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getShadowOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the shadow offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa1d8",
+    "NES": "0xdb864",
+    "Shonen": "0xea578"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getText",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "string"
+   ],
+   "typed": true,
+   "summary": "Returns the text.",
+   "note": "",
+   "families": {
+    "SNES": "0xab5e0",
+    "NES": "0xdad78",
+    "Shonen": "0xeb978"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTextOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the text offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa858",
+    "NES": "0xdb2f8",
+    "Shonen": "0xeabf8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTextScale",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the text scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xaab18",
+    "NES": "0xdb110",
+    "Shonen": "0xeaeb8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTopColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the top color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa7ac",
+    "NES": "0xdb374",
+    "Shonen": "0xeab4c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWrapWidth",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the wrap width.",
+   "note": "",
+   "families": {
+    "SNES": "0xaab94",
+    "NES": "0xe0670",
+    "Shonen": "0xeaf34"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "hasShadow",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether shadow.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa424",
+    "NES": "0xe08b0",
+    "Shonen": "0xea7c4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "hasWordWrap",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether word wrap.",
+   "note": "",
+   "families": {
+    "SNES": "0xaabf8",
+    "NES": "0xe05d4",
+    "Shonen": "0xeaf98"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isMonospaced",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether monospaced.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa488",
+    "NES": "0xe0814",
+    "Shonen": "0xea828"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "refreshText",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls refresh text.",
+   "note": "",
+   "families": {
+    "SNES": "0xab28c",
+    "NES": "0x10115c",
+    "Shonen": "0xeb62c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "refreshTextAll",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls refresh text all.",
+   "note": "",
+   "families": {
+    "SNES": "0xab2f4",
+    "NES": "0xe8b24",
+    "Shonen": "0xeb694"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setBottomColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the bottom color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa588",
+    "NES": "0xdb528",
+    "Shonen": "0xea928"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setCharacterSpacingOffset",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "characterSpacingOffset",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the character spacing offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaaa3c",
+    "NES": "0xdb18c",
+    "Shonen": "0xeaddc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFlags",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "flags",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the flags.",
+   "note": "",
+   "families": {
+    "SNES": "0xaac64",
+    "NES": "0xdb0a0",
+    "Shonen": "0xeb004"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFontResource",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "fontResource",
+     "type": "FontResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the font resource.",
+   "note": "",
+   "families": {
+    "SNES": "0xab0e4",
+    "NES": "0xdaddc",
+    "Shonen": "0xeb484"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setHasShadow",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "hasShadow",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the has shadow.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa3bc",
+    "NES": "0xdb690",
+    "Shonen": "0xea75c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLineHeightOffset",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "lineHeightOffset",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the line height offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa960",
+    "NES": "0xdb1fc",
+    "Shonen": "0xead00"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalIntVariable",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local int variable.",
+   "note": "",
+   "families": {
+    "SNES": "0xaae2c",
+    "NES": "0xd3990",
+    "Shonen": "0xeb1cc"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setLocalVariable",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local variable.",
+   "note": "",
+   "families": {
+    "SNES": "0xaaf14",
+    "NES": "0xd2e8c",
+    "Shonen": "0xeb2b4"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setMonospaced",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "monospaced",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the monospaced.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa4f0",
+    "NES": "0xdb5c4",
+    "Shonen": "0xea890"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setShadowColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the shadow color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa254",
+    "NES": "0xdb7c8",
+    "Shonen": "0xea5f4"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setShadowOffset",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the shadow offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa14c",
+    "NES": "0xdb8e0",
+    "Shonen": "0xea4ec"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setText",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "text",
+     "type": "string"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the text.",
+   "note": "",
+   "families": {
+    "SNES": "0xab56c",
+    "NES": "0xdba60",
+    "Shonen": "0xeb904"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextFromStringId",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "textFromStringId",
+     "type": "string"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the text from string id.",
+   "note": "",
+   "families": {
+    "SNES": "0xab4e8",
+    "NES": "0xdbafc",
+    "Shonen": "0xeb880"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextOffset",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the text offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa8d4",
+    "NES": "0xdb26c",
+    "Shonen": "0xeac74"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTextScale",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the text scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xaafe0",
+    "NES": "0xdbc40",
+    "Shonen": "0xeb380"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTopColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the top color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaa6f0",
+    "NES": "0xdb400",
+    "Shonen": "0xeaa90"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setWrapWidth",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "wrapWidth",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the wrap width.",
+   "note": "",
+   "families": {
+    "SNES": "0xab074",
+    "NES": "0xdbb88",
+    "Shonen": "0xeb414"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "Localization": [
+  {
+   "method": "getLocale",
+   "kind": "get",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [
+    "string",
+    "string",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the locale.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3220",
+    "NES": "0xbe268",
+    "Shonen": "0xe2f8c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getText",
+   "kind": "get",
+   "static": true,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "string"
+    }
+   ],
+   "returns": [
+    "string"
+   ],
+   "typed": true,
+   "summary": "Returns the text.",
+   "note": "",
+   "families": {
+    "SNES": "0xa31b4",
+    "NES": "0xbb03c",
+    "Shonen": "0xe2f20"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getUserLocale",
+   "kind": "get",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [
+    "string",
+    "string",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the user locale.",
+   "note": "",
+   "families": {
+    "SNES": "0xa337c",
+    "NES": "0xbdbdc",
+    "Shonen": "0xe30e8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "reloadStrings",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls reload strings.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3280",
+    "NES": "0xb4830",
+    "Shonen": "0xe2fec"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setLocale",
+   "kind": "set",
+   "static": true,
+   "args": 3,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    },
+    {
+     "name": "arg3",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the locale.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3434",
+    "NES": "0xcee38",
+    "Shonen": "0xe31a0"
+   },
+   "arity": {
+    "SNES": 3,
+    "NES": 3,
+    "Shonen": 3
+   }
+  },
+  {
+   "method": "useUserLocale",
+   "kind": "do",
+   "static": true,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls use user locale.",
+   "note": "",
+   "families": {
+    "SNES": "0xa32d8",
+    "NES": "0xe8080",
+    "Shonen": "0xe3044"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "MeshComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xac534",
+    "NES": "0x1153a0",
+    "Shonen": "0xed9a0"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getTexture",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xad474",
+    "NES": "0x117ab4",
+    "Shonen": "0xedf10"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTrianglesCount",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the triangles count.",
+   "note": "",
+   "families": {
+    "SNES": "0xad718",
+    "NES": "0xf62b8",
+    "Shonen": "0xeddb4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setTexture",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "texture",
+     "type": "Resource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xad89c",
+    "NES": "0xf59ec",
+    "Shonen": "0xede18"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTriangles",
+   "kind": "set",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the triangles.",
+   "note": "",
+   "families": {
+    "SNES": "0xad4d0",
+    "NES": "0xe094c",
+    "Shonen": "0xedb6c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "Object": [
+  {
+   "method": "getType",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the type.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1c30",
+    "NES": "0xf4bd8",
+    "Shonen": "0xf2320"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isInstanceOf",
+   "kind": "get",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether instance of.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1cd0",
+    "NES": "0xf4810",
+    "Shonen": "0xf23c0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "Player": [
+  {
+   "method": "getLastLoadResult",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the last load result.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe2520"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getListeningPort",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the listening port.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe2568"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "hasLoadError",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether load error.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xe25b0"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "RawResource": [
+  {
+   "method": "getContent",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the content.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5be8",
+    "NES": "0xb6ac4",
+    "Shonen": "0xe5f50"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "RenderTargetResource": [
+  {
+   "method": "getPixel",
+   "kind": "get",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pixel.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9598",
+    "NES": "0xb29fc",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xa9688",
+    "NES": "0xbdd68",
+    "Shonen": "0xea300"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "Resource": [
+  {
+   "method": "loadResourceConfiguration",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls load resource configuration.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1d78",
+    "NES": "0xbb144",
+    "Shonen": "0xf2468"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "synchronize",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls synchronize.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1de8",
+    "NES": "0xe8a18",
+    "Shonen": "0xf24d8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "Scene": [
+  {
+   "method": "instantiate",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls instantiate.",
+   "note": "",
+   "families": {
+    "SNES": "0xa86d4",
+    "NES": "0xd73a0",
+    "Shonen": "0xe8850"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "SceneAnimation": [
+  {
+   "method": "getDuration",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the duration.",
+   "note": "",
+   "families": {
+    "SNES": "0xa8668",
+    "NES": "0xb2c38",
+    "Shonen": "0xe830c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "ScriptComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xac5d8",
+    "NES": "0x1150e0",
+    "Shonen": "0xeda48"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "SoundComponent": [
+  {
+   "method": "closeNativeDevice",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls close native device.",
+   "note": "",
+   "families": {
+    "SNES": "0xb3174",
+    "NES": null,
+    "Shonen": "0xf3bf4"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa77fc",
+    "NES": "0x114c10",
+    "Shonen": "0xe70d8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getMasterVolume",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the master volume.",
+   "note": "",
+   "families": {
+    "SNES": "0xb3110",
+    "NES": "0xb3e68",
+    "Shonen": "0xf3b90"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getMaxDistance",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the max distance.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3c10",
+    "NES": "0x102e6c",
+    "Shonen": "0xe3434"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getMinDistance",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the min distance.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3c78",
+    "NES": "0x102b64",
+    "Shonen": "0xe349c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPan",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pan.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3edc",
+    "NES": "0x102ff0",
+    "Shonen": "0xe3700"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPitch",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pitch.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3e74",
+    "NES": "0x102ce8",
+    "Shonen": "0xe3698"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPriority",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the priority.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3e10",
+    "NES": "0x103a00",
+    "Shonen": "0xe3634"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSamplePosition",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the sample position.",
+   "note": "Returns 0.0 when the component has no native sound object; it does not raise an error.",
+   "families": {
+    "SNES": "0xa7340",
+    "NES": "0xd5650",
+    "Shonen": "0xe3e08"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSoundResource",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the sound resource.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7258",
+    "NES": "0x113574",
+    "Shonen": "0xe3834"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTimePosition",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the time position.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7440",
+    "NES": "0xd54d0",
+    "Shonen": "0xe3f08"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getVolume",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the volume.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3f44",
+    "NES": "0x1029e0",
+    "Shonen": "0xe3768"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isAutoPlay",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether auto play.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3dac",
+    "NES": "0x1034cc",
+    "Shonen": "0xe35d0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isLooped",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether looped.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3fac",
+    "NES": "0x103688",
+    "Shonen": "0xe37d0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isMuted",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether muted.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2f9c",
+    "NES": "0xbe9c8",
+    "Shonen": "0xf3a1c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "isPaused",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether paused.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7550",
+    "NES": "0x1025ec",
+    "Shonen": "0xe391c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isPlaying",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether playing.",
+   "note": "Returns false when the component has no native sound object (for example a disabled one); it does not raise an error.",
+   "families": {
+    "SNES": "0xa75e4",
+    "NES": "0x1019ac",
+    "Shonen": "0xe4018"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isPositional",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether positional.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3ce0",
+    "NES": "0x103310",
+    "Shonen": "0xe3504"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isStoppedWhenDisabled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether stopped when disabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3b44",
+    "NES": "0x103844",
+    "Shonen": "0xe3368"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "pause",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls pause.",
+   "note": "",
+   "families": {
+    "SNES": "0xa76ec",
+    "NES": "0x1027b4",
+    "Shonen": "0xe4120"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "play",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls play.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7790",
+    "NES": "0xd5428",
+    "Shonen": "0xe41c4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "playOneShot",
+   "kind": "do",
+   "static": false,
+   "args": 3,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls play one shot.",
+   "note": "",
+   "families": {
+    "SNES": "0xa5f70",
+    "NES": "0xe7a7c",
+    "Shonen": "0xe3270"
+   },
+   "arity": {
+    "SNES": 3,
+    "NES": 3,
+    "Shonen": 3
+   }
+  },
+  {
+   "method": "setAutoPlay",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "autoPlay",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the auto play.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3d44",
+    "NES": "0x101d94",
+    "Shonen": "0xe3568"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLoop",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "loop",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the loop.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4384",
+    "NES": "0xd5a70",
+    "Shonen": "0xe3d24"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setMasterVolume",
+   "kind": "set",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the master volume.",
+   "note": "",
+   "families": {
+    "SNES": "0xb3098",
+    "NES": "0xe8718",
+    "Shonen": "0xf3b18"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setMaxDistance",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "maxDistance",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the max distance.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4010",
+    "NES": "0x1017f8",
+    "Shonen": "0xe39b0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setMinDistance",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "minDistance",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the min distance.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4090",
+    "NES": "0x1012e8",
+    "Shonen": "0xe3a30"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setMute",
+   "kind": "set",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the mute.",
+   "note": "",
+   "families": {
+    "SNES": "0xb2fe4",
+    "NES": "0xe8884",
+    "Shonen": "0xf3a64"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setPan",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "pan",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the pan.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4264",
+    "NES": "0xd5d4c",
+    "Shonen": "0xe3c04"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setPitch",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "pitch",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the pitch.",
+   "note": "",
+   "families": {
+    "SNES": "0xa41f0",
+    "NES": "0xd5ebc",
+    "Shonen": "0xe3b90"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setPositional",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "positional",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the positional.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4110",
+    "NES": "0xd6150",
+    "Shonen": "0xe3ab0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 2,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setPriority",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "priority",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the priority.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4180",
+    "NES": "0xd6008",
+    "Shonen": "0xe3b20"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSoundResource",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "soundResource",
+     "type": "SoundResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the sound resource.",
+   "note": "The argument must be a loaded SoundResource; otherwise the engine raises 'resource (SoundResource) is not loaded'.",
+   "families": {
+    "SNES": "0xa6068",
+    "NES": "0xd57c0",
+    "Shonen": "0xe3d94"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setStopWhenDisabled",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "stopWhenDisabled",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the stop when disabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3ba8",
+    "NES": "0x101bd4",
+    "Shonen": "0xe33cc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setVolume",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "volume",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the volume.",
+   "note": "",
+   "families": {
+    "SNES": "0xa4310",
+    "NES": "0xd5c00",
+    "Shonen": "0xe3cb0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "stop",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls stop.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7688",
+    "NES": "0x103174",
+    "Shonen": "0xe40bc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "SoundListenerComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa3aa0",
+    "NES": "0x114b60",
+    "Shonen": "0xe7030"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  }
+ ],
+ "SoundResource": [
+  {
+   "method": "getLength",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the length.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7c50",
+    "NES": "0xb2e68",
+    "Shonen": "0xe2488"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSampleCount",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the sample count.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7bb8",
+    "NES": "0xb30d0",
+    "Shonen": "0xe23f0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSampleRate",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the sample rate.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7b30",
+    "NES": "0xb3320",
+    "Shonen": "0xe2368"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "SpriteAnimationResource": [
+  {
+   "method": "getFrameCount",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the frame count.",
+   "note": "",
+   "families": {
+    "SNES": "0xacb1c",
+    "NES": "0xb256c",
+    "Shonen": "0xedaf0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "SpriteComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xac490",
+    "NES": "0x114ed0",
+    "Shonen": "0xed8f8"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getPivot",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pivot.",
+   "note": "",
+   "families": {
+    "SNES": "0xacfc0",
+    "NES": "0xf1b70",
+    "Shonen": "0xed558"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad0c0",
+    "NES": "0xf2dc8",
+    "Shonen": "0xed658"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSprite",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the sprite.",
+   "note": "",
+   "families": {
+    "SNES": "0xad418",
+    "NES": "0x112c70",
+    "Shonen": "0xed89c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isFlippedHorizontal",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether flipped horizontal.",
+   "note": "",
+   "families": {
+    "SNES": "0xacf58",
+    "NES": "0xf4654",
+    "Shonen": "0xed4ec"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isFlippedVertical",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether flipped vertical.",
+   "note": "",
+   "families": {
+    "SNES": "0xacef0",
+    "NES": "0xf4498",
+    "Shonen": "0xed484"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "resetSize",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls reset size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad14c",
+    "NES": "0xf225c",
+    "Shonen": "0xed6e4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setFlipHorizontal",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "flipHorizontal",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the flip horizontal.",
+   "note": "",
+   "families": {
+    "SNES": "0xace80",
+    "NES": "0xf3c0c",
+    "Shonen": "0xed414"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFlipVertical",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "flipVertical",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the flip vertical.",
+   "note": "",
+   "families": {
+    "SNES": "0xace10",
+    "NES": "0xf3a40",
+    "Shonen": "0xed3a4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSize",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad200",
+    "NES": "0xfd69c",
+    "Shonen": "0xed798"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setSprite",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "sprite",
+     "type": "SpriteResource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the sprite.",
+   "note": "",
+   "families": {
+    "SNES": "0xad294",
+    "NES": "0xdfad4",
+    "Shonen": "0xed82c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "SpriteResource": [
+  {
+   "method": "getPivot",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pivot.",
+   "note": "",
+   "families": {
+    "SNES": "0xad304",
+    "NES": "0xb27a8",
+    "Shonen": "0xef17c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad77c",
+    "NES": "0xbe5d8",
+    "Shonen": "0xef230"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTextureResource",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the texture resource.",
+   "note": "",
+   "families": {
+    "SNES": "0xad3b8",
+    "NES": "0x1129f8",
+    "Shonen": "0xef2c8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "TextVariable": [
+  {
+   "method": "getVariable",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "string",
+    "number",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the variable.",
+   "note": "",
+   "families": {
+    "SNES": "0xae9f4",
+    "NES": "0xba9cc",
+    "Shonen": "0xef054"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setIntVariable",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "intVariable",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the int variable.",
+   "note": "",
+   "families": {
+    "SNES": "0xae868",
+    "NES": "0xba770",
+    "Shonen": "0xeeec8"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setVariable",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "variable",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the variable.",
+   "note": "",
+   "families": {
+    "SNES": "0xae93c",
+    "NES": "0xce610",
+    "Shonen": "0xeef9c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "TextureComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xac348",
+    "NES": "0x114f80",
+    "Shonen": "0xe8700"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getPivot",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pivot.",
+   "note": "",
+   "families": {
+    "SNES": "0xabd90",
+    "NES": "0xf2f4c",
+    "Shonen": "0xec250"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xabec8",
+    "NES": "0xfe448",
+    "Shonen": "0xec518"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTexture",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xac2ec",
+    "NES": "0x1178d0",
+    "Shonen": "0xec614"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTextureOffset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the texture offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xabd14",
+    "NES": "0xf33f4",
+    "Shonen": "0xec12c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTextureRepeat",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the texture repeat.",
+   "note": "",
+   "families": {
+    "SNES": "0xabad8",
+    "NES": "0xf2c48",
+    "Shonen": "0xebef0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "resetSize",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls reset size.",
+   "note": "",
+   "families": {
+    "SNES": "0xabe14",
+    "NES": "0xf30c4",
+    "Shonen": "0xec2d4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setCurrentFrame",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "currentFrame",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the current frame.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xebcec"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setHeight",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the height.",
+   "note": "",
+   "families": {
+    "SNES": "0xabffc",
+    "NES": null,
+    "Shonen": "0xec388"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setPivot",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the pivot.",
+   "note": "",
+   "families": {
+    "SNES": "0xabf54",
+    "NES": "0xf19dc",
+    "Shonen": "0xec1a8"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setSize",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xac0ec",
+    "NES": "0xf1d58",
+    "Shonen": "0xec478"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTexture",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "texture",
+     "type": "Resource"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xac18c",
+    "NES": "0xe0130",
+    "Shonen": "0xec5a4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextureOffset",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture offset.",
+   "note": "",
+   "families": {
+    "SNES": "0xabc64",
+    "NES": "0xf1840",
+    "Shonen": "0xec07c"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTextureOffsetX",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "textureOffsetX",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture offset x.",
+   "note": "",
+   "families": {
+    "SNES": "0xabbe4",
+    "NES": null,
+    "Shonen": "0xebffc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextureOffsetY",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "textureOffsetY",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture offset y.",
+   "note": "",
+   "families": {
+    "SNES": "0xabb64",
+    "NES": null,
+    "Shonen": "0xebf7c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextureRepeat",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture repeat.",
+   "note": "",
+   "families": {
+    "SNES": "0xaba3c",
+    "NES": "0xf2ac0",
+    "Shonen": "0xebe54"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTextureRepeatX",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "textureRepeatX",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture repeat x.",
+   "note": "",
+   "families": {
+    "SNES": "0xab9c8",
+    "NES": null,
+    "Shonen": "0xebde0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setTextureRepeatY",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "textureRepeatY",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the texture repeat y.",
+   "note": "",
+   "families": {
+    "SNES": "0xab954",
+    "NES": null,
+    "Shonen": "0xebd6c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWidth",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the width.",
+   "note": "",
+   "families": {
+    "SNES": "0xac074",
+    "NES": null,
+    "Shonen": "0xec400"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  }
+ ],
+ "TextureResource": [
+  {
+   "method": "getPixel",
+   "kind": "get",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the pixel.",
+   "note": "",
+   "families": {
+    "SNES": "0xac1fc",
+    "NES": "0xb2368",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad814",
+    "NES": "0xbe394",
+    "Shonen": "0xede88"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  }
+ ],
+ "TilemapComponent": [
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xa7a8c",
+    "NES": "0x114e20",
+    "Shonen": "0xe8658"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getTileGridSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer",
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the tile grid size.",
+   "note": "",
+   "families": {
+    "SNES": "0xab6d4",
+    "NES": "0xf57fc",
+    "Shonen": "0xeba6c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTileSizeScreen",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the tile size screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xab8d8",
+    "NES": "0xf568c",
+    "Shonen": "0xebc70"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getTileSizeTexture",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the tile size texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xab7d0",
+    "NES": "0xf551c",
+    "Shonen": "0xebb68"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setTileGridSize",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the tile grid size.",
+   "note": "",
+   "families": {
+    "SNES": "0xab644",
+    "NES": "0xe0458",
+    "Shonen": "0xeb9dc"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTileSizeScreen",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the tile size screen.",
+   "note": "",
+   "families": {
+    "SNES": "0xab84c",
+    "NES": "0xf4eec",
+    "Shonen": "0xebbe4"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 1,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setTileSizeTexture",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the tile size texture.",
+   "note": "",
+   "families": {
+    "SNES": "0xab744",
+    "NES": "0xf4d74",
+    "Shonen": "0xebadc"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  }
+ ],
+ "VideoComponent": [
+  {
+   "method": "close",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls close.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xf16c8",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0x114cc0",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getCurrentTime",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the current time.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfbf50",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getCurrentTimeAsSeconds",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the current time as seconds.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfa278",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getLength",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the length.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfbdc8",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getLengthAsSeconds",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the length as seconds.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfa400",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getState",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns the state.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfd038",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "isAutoPlay",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Returns whether auto play.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfc41c",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "open",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls open.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xd3f8c",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "pause",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls pause.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfea58",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "play",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls play.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfe8d4",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "resume",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls resume.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfe5cc",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "seek",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls seek.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfbc50",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "seekAsSeconds",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls seek as seconds.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfb954",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setAutoPlay",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "autoPlay",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the auto play.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfb124",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setAutoresize",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "autoresize",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the autoresize.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfaf64",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 1,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setSize",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    },
+    {
+     "name": "arg2",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": false,
+   "summary": "Sets the size.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xf87ec",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 2,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "stop",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": false,
+   "summary": "Calls stop.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": "0xfe750",
+    "Shonen": null
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  }
+ ],
+ "VisualComponent": [
+  {
+   "method": "getAlpha",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xadac8",
+    "NES": "0xf7908",
+    "Shonen": "0xee128"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getBlendPreset",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the blend preset.",
+   "note": "",
+   "families": {
+    "SNES": "0xad970",
+    "NES": "0xf8e88",
+    "Shonen": "0xedfd0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the color.",
+   "note": "",
+   "families": {
+    "SNES": "0xae108",
+    "NES": "0xdf83c",
+    "Shonen": "0xee49c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getColorB",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the color b.",
+   "note": "",
+   "families": {
+    "SNES": "0xadce8",
+    "NES": "0xf7784",
+    "Shonen": "0xee2c8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getColorG",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the color g.",
+   "note": "",
+   "families": {
+    "SNES": "0xadd50",
+    "NES": "0xf7a8c",
+    "Shonen": "0xee330"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getColorR",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the color r.",
+   "note": "",
+   "families": {
+    "SNES": "0xaddb8",
+    "NES": "0xf7d90",
+    "Shonen": "0xee398"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLayer",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the layer.",
+   "note": "",
+   "families": {
+    "SNES": "0xae26c",
+    "NES": "0xf8ce0",
+    "Shonen": "0xee600"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfAlpha",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xada60",
+    "NES": null,
+    "Shonen": "0xee0c0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self color.",
+   "note": "",
+   "families": {
+    "SNES": "0xae06c",
+    "NES": null,
+    "Shonen": "0xee400"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfColorB",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self color b.",
+   "note": "",
+   "families": {
+    "SNES": "0xadbb0",
+    "NES": null,
+    "Shonen": "0xee190"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfColorG",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self color g.",
+   "note": "",
+   "families": {
+    "SNES": "0xadc18",
+    "NES": null,
+    "Shonen": "0xee1f8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfColorR",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self color r.",
+   "note": "",
+   "families": {
+    "SNES": "0xadc80",
+    "NES": null,
+    "Shonen": "0xee260"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSize",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the size.",
+   "note": "",
+   "families": {
+    "SNES": "0xad9d4",
+    "NES": "0xdf958",
+    "Shonen": "0xee034"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xae1a4",
+    "NES": "0xf8b38",
+    "Shonen": "0xee538"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xae208",
+    "NES": "0xf8990",
+    "Shonen": "0xee59c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isCulled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether culled.",
+   "note": "",
+   "families": {
+    "SNES": "0xad90c",
+    "NES": "0xf80d4",
+    "Shonen": "0xedf6c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isSelfVisible",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether self visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xae2d0",
+    "NES": null,
+    "Shonen": "0xee664"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isVisible",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xae334",
+    "NES": null,
+    "Shonen": "0xee6c8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "setAlpha",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "alpha",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xadb30",
+    "NES": "0xf7484",
+    "Shonen": "0xeea04"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setBlendPreset",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "blendPreset",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the blend preset.",
+   "note": "",
+   "families": {
+    "SNES": "0xae434",
+    "NES": "0xf7c10",
+    "Shonen": "0xee760"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the color.",
+   "note": "",
+   "families": {
+    "SNES": "0xadfa0",
+    "NES": "0xdf8bc",
+    "Shonen": "0xeec04"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setColorB",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "colorB",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the color b.",
+   "note": "",
+   "families": {
+    "SNES": "0xade20",
+    "NES": "0xf7184",
+    "Shonen": "0xeea84"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setColorG",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "colorG",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the color g.",
+   "note": "",
+   "families": {
+    "SNES": "0xadea0",
+    "NES": "0xf7604",
+    "Shonen": "0xeeb04"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setColorR",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "colorR",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the color r.",
+   "note": "",
+   "families": {
+    "SNES": "0xadf20",
+    "NES": "0xf7304",
+    "Shonen": "0xeeb84"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setFilters",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the filters.",
+   "note": "",
+   "families": {
+    "SNES": "0xae560",
+    "NES": "0x102260",
+    "Shonen": "0xee88c"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setLayer",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "layer",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the layer.",
+   "note": "",
+   "families": {
+    "SNES": "0xae7ec",
+    "NES": "0xf6b00",
+    "Shonen": "0xeede4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setSamplerSettings",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    },
+    {
+     "name": "arg3",
+     "type": "integer"
+    },
+    {
+     "name": "arg4",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the sampler settings.",
+   "note": "",
+   "families": {
+    "SNES": "0xae624",
+    "NES": "0xdf9e4",
+    "Shonen": "0xee950"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": 4,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setVisible",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "visible",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xae3cc",
+    "NES": null,
+    "Shonen": "0xeee60"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWorldZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "worldZIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xae6d8",
+    "NES": "0xf6e38",
+    "Shonen": "0xeecd0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWrapModes",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "integer"
+    },
+    {
+     "name": "arg2",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the wrap modes.",
+   "note": "",
+   "families": {
+    "SNES": "0xae49c",
+    "NES": "0x102424",
+    "Shonen": "0xee7c8"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "zIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xae770",
+    "NES": "0xf6c9c",
+    "Shonen": "0xeed68"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  }
+ ],
+ "Volumes": [
+  {
+   "method": "getBootApplicationPath",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the boot application path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf2698"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getPath",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf277c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSyncApplicationPath",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the sync application path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf2624"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getSystemPath",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the system path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf270c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getTempPath",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the temp path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf253c"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "getUserPath",
+   "kind": "get",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the user path.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf25b0"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "isVolumeMounted",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether volume mounted.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf2824"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "mountDataVolume",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "string"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls mount data volume.",
+   "note": "",
+   "families": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": "0xf2880"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": 1
+   }
+  }
+ ],
+ "WorldNode": [
+  {
+   "method": "addChildNode",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls add child node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1730",
+    "NES": "0xf6110",
+    "Shonen": "0xeff18"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "addHierarchyToNode",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls add hierarchy to node.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf458",
+    "NES": "0xf5cb0",
+    "Shonen": "0xefdb4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "addHierarchyToRoot",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls add hierarchy to root.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf4d0",
+    "NES": "0xdbe50",
+    "Shonen": "0xefe2c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "attachComponent",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls attach component.",
+   "note": "",
+   "families": {
+    "SNES": "0xb13ac",
+    "NES": "0xf326c",
+    "Shonen": "0xf1c24"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "attachToWorld",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls attach to world.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf53c",
+    "NES": "0xdc0d8",
+    "Shonen": "0xefe98"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "create",
+   "kind": "do",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls create.",
+   "note": "",
+   "families": {
+    "SNES": "0xb19c8",
+    "NES": "0x115450",
+    "Shonen": "0xf2124"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": 0,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "destroy",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls destroy.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf8b8",
+    "NES": "0xdc4d8",
+    "Shonen": "0xf02a4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "detachComponent",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls detach component.",
+   "note": "",
+   "families": {
+    "SNES": "0xb10ec",
+    "NES": "0xf6880",
+    "Shonen": "0xf19d4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "detachFromWorld",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls detach from world.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf3cc",
+    "NES": "0xdbf78",
+    "Shonen": "0xefd2c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "disable",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls disable.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0d90",
+    "NES": "0xddfb4",
+    "Shonen": "0xf1678"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "enable",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls enable.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0df0",
+    "NES": "0xde0a0",
+    "Shonen": "0xf16d8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getAllComponents",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "array"
+   ],
+   "typed": true,
+   "summary": "Returns the all components.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0ec8",
+    "NES": "0x1068b4",
+    "Shonen": "0xf17b0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getAlpha",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xaeb88",
+    "NES": null,
+    "Shonen": "0xef394"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getCategory",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the category.",
+   "note": "",
+   "families": {
+    "SNES": "0xaee84",
+    "NES": "0xdc3b0",
+    "Shonen": "0xef690"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getChildByName",
+   "kind": "get",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the child by name.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1688",
+    "NES": "0xdebd4",
+    "Shonen": "0xf1ca8"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaec94",
+    "NES": null,
+    "Shonen": "0xef4a0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getComponent",
+   "kind": "get",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the component.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1024",
+    "NES": "0xde8b4",
+    "Shonen": "0xf190c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getComponents",
+   "kind": "get",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "array"
+   ],
+   "typed": true,
+   "summary": "Returns the components.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0f28",
+    "NES": "0x106a30",
+    "Shonen": "0xf1810"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "getFirstChildNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the first child node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1550",
+    "NES": "0xdf2f4",
+    "Shonen": "0xf1e70"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLastChildNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the last child node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb14f0",
+    "NES": "0xdf250",
+    "Shonen": "0xf1e10"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalPosition",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local position.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf2c4",
+    "NES": "0xdd5f8",
+    "Shonen": "0xefad0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalPositionX",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local position x.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf258",
+    "NES": "0xdd590",
+    "Shonen": "0xefa64"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalPositionY",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local position y.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf1ec",
+    "NES": "0xdd528",
+    "Shonen": "0xef9f8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalRotation",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local rotation.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf180",
+    "NES": "0xdd38c",
+    "Shonen": "0xef98c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalScale",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf100",
+    "NES": "0xdd0d0",
+    "Shonen": "0xef90c"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalScaleX",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local scale x.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf094",
+    "NES": "0xdd068",
+    "Shonen": "0xef8a0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalScaleY",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local scale y.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf028",
+    "NES": "0xdd000",
+    "Shonen": "0xef834"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getLocalTransform",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the local transform.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0b64",
+    "NES": "0xddd94",
+    "Shonen": "0xf08c8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getName",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the name.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf7e4",
+    "NES": "0xdc170",
+    "Shonen": "0xf01c4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getParentNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the parent node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb15b0",
+    "NES": "0xdf398",
+    "Shonen": "0xf1ed0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getPreviousSiblingNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the previous sibling node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1430",
+    "NES": "0xdf108",
+    "Shonen": "0xf1d50"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfAlpha",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xaeb1c",
+    "NES": null,
+    "Shonen": "0xef328"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSelfColor",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the self color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaebf4",
+    "NES": null,
+    "Shonen": "0xef400"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getSiblingNode",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Returns the sibling node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1490",
+    "NES": "0xdf1ac",
+    "Shonen": "0xf1db0"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldPosition",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the world position.",
+   "note": "",
+   "families": {
+    "SNES": "0xb05a8",
+    "NES": "0xdd498",
+    "Shonen": "0xf04f4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldRotation",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the world rotation.",
+   "note": "",
+   "families": {
+    "SNES": "0xafeac",
+    "NES": "0xdd310",
+    "Shonen": "0xf0b10"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldScale",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the world scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xb050c",
+    "NES": "0xdcf24",
+    "Shonen": "0xf12f8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldTransform",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number",
+    "number",
+    "number",
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the world transform.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0a94",
+    "NES": "0xddd00",
+    "Shonen": "0xf0588"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getWorldZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xaef58",
+    "NES": "0xdca08",
+    "Shonen": "0xef764"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getXAxis",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the xaxis.",
+   "note": "",
+   "families": {
+    "SNES": "0xafe14",
+    "NES": "0xdcc38",
+    "Shonen": "0xf0a78"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getYAxis",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Returns the yaxis.",
+   "note": "",
+   "families": {
+    "SNES": "0xafd78",
+    "NES": "0xdcb88",
+    "Shonen": "0xf09dc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "getZIndex",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "integer"
+   ],
+   "typed": true,
+   "summary": "Returns the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xaefc0",
+    "NES": "0xdcafc",
+    "Shonen": "0xef7cc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isDestroyed",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether destroyed.",
+   "note": "",
+   "families": {
+    "SNES": "0xaeeec",
+    "NES": "0xdc43c",
+    "Shonen": "0xef6f8"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isEnabled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0d1c",
+    "NES": "0xddf10",
+    "Shonen": "0xefbbc"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isSelfEnabled",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether self enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0cb0",
+    "NES": "0xdde74",
+    "Shonen": "0xefb50"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isSelfVisible",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether self visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xaed34",
+    "NES": null,
+    "Shonen": "0xef540"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "isVisible",
+   "kind": "get",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
+   "summary": "Returns whether visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xaeda0",
+    "NES": null,
+    "Shonen": "0xef5ac"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": null,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "localToWorldDirection",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls local to world direction.",
+   "note": "",
+   "families": {
+    "SNES": "0xafa10",
+    "NES": "0xdc798",
+    "Shonen": "0xf03fc"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "localToWorldPosition",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls local to world position.",
+   "note": "",
+   "families": {
+    "SNES": "0xafbc4",
+    "NES": "0xdc88c",
+    "Shonen": "0xf0714"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "removeChildNode",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "any"
+    }
+   ],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls remove child node.",
+   "note": "",
+   "families": {
+    "SNES": "0xb1944",
+    "NES": "0xf5ec0",
+    "Shonen": "0xefc30"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "removeHierarchy",
+   "kind": "do",
+   "static": false,
+   "args": 0,
+   "params": [],
+   "returns": [
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls remove hierarchy.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf344",
+    "NES": "0xf14c0",
+    "Shonen": "0xefcb4"
+   },
+   "arity": {
+    "SNES": 0,
+    "NES": 0,
+    "Shonen": 0
+   }
+  },
+  {
+   "method": "rotate",
+   "kind": "do",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls rotate.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0178",
+    "NES": "0xdd14c",
+    "Shonen": "0xf0ddc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "scale",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xaff18",
+    "NES": "0xdcce4",
+    "Shonen": "0xf0b7c"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setAlpha",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "alpha",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the alpha.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf5bc",
+    "NES": null,
+    "Shonen": "0xeff9c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setCategory",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "category",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the category.",
+   "note": "",
+   "families": {
+    "SNES": "0xaee18",
+    "NES": "0xdc350",
+    "Shonen": "0xef624"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setColor",
+   "kind": "set",
+   "static": false,
+   "args": 4,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the color.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf634",
+    "NES": null,
+    "Shonen": "0xf0014"
+   },
+   "arity": {
+    "SNES": 4,
+    "NES": null,
+    "Shonen": 4
+   }
+  },
+  {
+   "method": "setEnabled",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "enabled",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the enabled.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0e54",
+    "NES": "0xde434",
+    "Shonen": "0xf173c"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalPosition",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local position.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0718",
+    "NES": "0xdd8a8",
+    "Shonen": "0xf1260"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setLocalPositionX",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "localPositionX",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local position x.",
+   "note": "",
+   "families": {
+    "SNES": "0xb06a4",
+    "NES": "0xdd83c",
+    "Shonen": "0xf11e8"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalPositionY",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "localPositionY",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local position y.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0630",
+    "NES": "0xdd7d0",
+    "Shonen": "0xf1170"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalRotation",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "localRotation",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local rotation.",
+   "note": "",
+   "families": {
+    "SNES": "0xb02c0",
+    "NES": "0xdd298",
+    "Shonen": "0xf0f24"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalScale",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local scale.",
+   "note": "",
+   "families": {
+    "SNES": "0xb00d4",
+    "NES": "0xdce84",
+    "Shonen": "0xf0d38"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setLocalScaleX",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "localScaleX",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local scale x.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0050",
+    "NES": "0xdce0c",
+    "Shonen": "0xf0cb4"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalScaleY",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "localScaleY",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local scale y.",
+   "note": "",
+   "families": {
+    "SNES": "0xaffcc",
+    "NES": "0xdcd94",
+    "Shonen": "0xf0c30"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setLocalTransform",
+   "kind": "set",
+   "static": false,
+   "args": 6,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    },
+    {
+     "name": "arg5",
+     "type": "number"
+    },
+    {
+     "name": "arg6",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the local transform.",
+   "note": "",
+   "families": {
+    "SNES": "0xb07b0",
+    "NES": "0xddbd4",
+    "Shonen": "0xf1394"
+   },
+   "arity": {
+    "SNES": 6,
+    "NES": 6,
+    "Shonen": 6
+   }
+  },
+  {
+   "method": "setName",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "name",
+     "type": "any"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the name.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf854",
+    "NES": "0xdc1fc",
+    "Shonen": "0xf0240"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setNewParent",
+   "kind": "set",
+   "static": false,
+   "args": null,
+   "params": [],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the new parent.",
+   "note": "",
+   "families": {
+    "SNES": "0xb17b4",
+    "NES": "0xdecfc",
+    "Shonen": "0xf1f94"
+   },
+   "arity": {
+    "SNES": null,
+    "NES": null,
+    "Shonen": null
+   }
+  },
+  {
+   "method": "setVisible",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "visible",
+     "type": "boolean"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the visible.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf6fc",
+    "NES": null,
+    "Shonen": "0xf00dc"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": null,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWorldPosition",
+   "kind": "set",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world position.",
+   "note": "",
+   "families": {
+    "SNES": "0xb03ec",
+    "NES": "0xdd674",
+    "Shonen": "0xf1050"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "setWorldRotation",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "worldRotation",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world rotation.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0204",
+    "NES": "0xdd1cc",
+    "Shonen": "0xf0e68"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setWorldTransform",
+   "kind": "set",
+   "static": false,
+   "args": 6,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    },
+    {
+     "name": "arg3",
+     "type": "number"
+    },
+    {
+     "name": "arg4",
+     "type": "number"
+    },
+    {
+     "name": "arg5",
+     "type": "number"
+    },
+    {
+     "name": "arg6",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world transform.",
+   "note": "",
+   "families": {
+    "SNES": "0xb08bc",
+    "NES": "0xdd93c",
+    "Shonen": "0xf14a0"
+   },
+   "arity": {
+    "SNES": 6,
+    "NES": 6,
+    "Shonen": 6
+   }
+  },
+  {
+   "method": "setWorldZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "worldZIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the world zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xafc80",
+    "NES": "0xdc990",
+    "Shonen": "0xf07d0"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "setZIndex",
+   "kind": "set",
+   "static": false,
+   "args": 1,
+   "params": [
+    {
+     "name": "zIndex",
+     "type": "integer"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Sets the zindex.",
+   "note": "",
+   "families": {
+    "SNES": "0xafd04",
+    "NES": "0xdca94",
+    "Shonen": "0xf0854"
+   },
+   "arity": {
+    "SNES": 1,
+    "NES": 1,
+    "Shonen": 1
+   }
+  },
+  {
+   "method": "translate",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [],
+   "typed": true,
+   "summary": "Calls translate.",
+   "note": "",
+   "families": {
+    "SNES": "0xb0344",
+    "NES": "0xdd3f4",
+    "Shonen": "0xf0fa8"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "worldToLocalDirection",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls world to local direction.",
+   "note": "",
+   "families": {
+    "SNES": "0xaf914",
+    "NES": "0xdc530",
+    "Shonen": "0xf0300"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  },
+  {
+   "method": "worldToLocalPosition",
+   "kind": "do",
+   "static": false,
+   "args": 2,
+   "params": [
+    {
+     "name": "arg1",
+     "type": "number"
+    },
+    {
+     "name": "arg2",
+     "type": "number"
+    }
+   ],
+   "returns": [
+    "number",
+    "number"
+   ],
+   "typed": true,
+   "summary": "Calls world to local position.",
+   "note": "",
+   "families": {
+    "SNES": "0xafb08",
+    "NES": "0xdc64c",
+    "Shonen": "0xf0658"
+   },
+   "arity": {
+    "SNES": 2,
+    "NES": 2,
+    "Shonen": 2
+   }
+  }
+ ]
+}

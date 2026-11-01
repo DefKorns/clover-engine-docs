@@ -1,0 +1,49 @@
+(function(){
+const D=JSON.parse(document.getElementById('apidata').textContent);
+const root=document.getElementById('apiroot');
+const FAMS=['SNES','NES','Shonen'];
+const esc=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function sig(c,o){
+  const sep=o.static?'.':':';
+  const ps=o.args===null?'...':o.params.map(p=>p.name+': '+p.type).join(', ');
+  const r=o.returns.length?(o.returns.length==1?': '+o.returns[0]:': ('+o.returns.join(', ')+')'):'';
+  return c+sep+o.method+'('+ps+')'+r;
+}
+function build(){
+  let h='';
+  for(const [c,ops] of Object.entries(D)){
+    h+='<div class="cls" data-c="'+c+'"><div class="tag"><h2>'+c+'</h2><small>'+ops.length+(ops.length==1?' method':' methods')+'</small></div>';
+    for(const o of ops){
+      const badge={get:'GET',set:'SET',do:'CALL'}[o.kind];
+      const typed=o.typed;
+      const chips=FAMS.map(f=>'<span class="chip'+(o.families[f]?' on':'')+'">'+f+'</span>').join('');
+      const rows=o.params.length?('<table><tr><th>Name</th><th>Type</th></tr>'+o.params.map(p=>'<tr><td><code>'+esc(p.name)+'</code></td><td><code>'+esc(p.type)+'</code></td></tr>').join('')+'</table>'):('<p>'+(o.args===null?'Argument count not recovered.':(o.args===0?'None.':'Not classified ('+o.args+' argument'+(o.args>1?'s':'')+').'))+'</p>');
+      const ret=o.returns.length?o.returns.map(r=>'<code>'+esc(r)+'</code>').join(', '):(typed?'Nothing, or not classified.':'Not classified.');
+      const fam='<table><tr><th>Family</th><th>Binding</th><th>Arguments</th></tr>'+FAMS.map(f=>'<tr><td>'+f+'</td><td>'+(o.families[f]?'<code>'+o.families[f]+'</code>':'not bound')+'</td><td>'+(o.arity[f]===null||o.arity[f]===undefined?'-':o.arity[f])+'</td></tr>').join('')+'</table>';
+      h+='<details class="op '+o.kind+'" data-n="'+(c+'.'+o.method).toLowerCase()+'" data-k="'+o.kind+'" data-f="'+FAMS.filter(f=>o.families[f]).join(',')+'">'
+        +'<summary><span class="badge">'+badge+'</span><span class="opname">'+esc(typed?sig(c,o):c+(o.static?'.':':')+o.method+'('+(o.args===null?'?':o.args)+' args)')+'</span><span class="sum">'+esc(o.summary)+'</span>'+chips+'</summary>'
+        +'<div class="opbody">'+(o.note?'<div class="note">'+esc(o.note)+'</div>':'')+'<h4>Parameters</h4>'+rows+'<h4>Returns</h4><p>'+ret+'</p><h4>Bound in</h4>'+fam+'</div></details>';
+    }
+    h+='</div>';
+  }
+  root.innerHTML=h;
+}
+build();
+const q=document.getElementById('apiq'),kind=document.getElementById('apikind');
+function apply(){
+  const t=q.value.toLowerCase().trim();
+  const fams=[...document.querySelectorAll('.fam')].filter(x=>x.checked).map(x=>x.value);
+  document.querySelectorAll('.cls').forEach(cl=>{
+    let any=false;
+    cl.querySelectorAll('.op').forEach(op=>{
+      const ok=(!t||op.dataset.n.includes(t))&&(!kind.value||op.dataset.k===kind.value)&&op.dataset.f.split(',').some(f=>fams.includes(f));
+      op.style.display=ok?'':'none'; if(ok)any=true;
+    });
+    cl.style.display=any?'':'none';
+  });
+}
+q.addEventListener('input',apply);kind.addEventListener('change',apply);
+document.querySelectorAll('.fam').forEach(x=>x.addEventListener('change',apply));
+let open=false;
+document.getElementById('apiexp').addEventListener('click',e=>{open=!open;document.querySelectorAll('.op').forEach(o=>{if(o.style.display!=='none')o.open=open});e.target.textContent=open?'Collapse all':'Expand all'});
+})();
