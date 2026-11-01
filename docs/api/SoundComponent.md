@@ -52,6 +52,7 @@
 
 - **`getSamplePosition`**: Returns 0.0 when the component has no native sound object; it does not raise an error.
 - **`isPlaying`**: Returns false when the component has no native sound object (for example a disabled one); it does not raise an error.
+- **`play`**: Plays only when the component has a native sound object and is enabled (the virtual isEnabled returns true); otherwise it returns 0 and does nothing, without an error. Returns the playback handle as a number.
 - **`setSoundResource`**: The argument must be a loaded SoundResource; otherwise the engine raises 'resource (SoundResource) is not loaded'.
 
 ## How to read the tables

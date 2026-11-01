@@ -286,15 +286,16 @@ Android, OSX, iOS) are set by the engine before the scripts run. `TITLE_RETURN_C
 
 ### 8.1 Boot music (`bgm_boot`)
 
-- `defaultscene.scn` has a `SoundComponent` on `Main`, linked as `Main.bootBGM`: `/sounds/hvc/bgm_boot.wav`,
-  `autoPlay: false`, `volume: 1`. It is identical in the HVC, NES, SNES and Shonen stock UI packages.
-- `Main.update` waits for the main music to load; when `not bootBGM:isPlaying()` (or the sample position went back) it
-  calls `mainBGM:play()` and `bootBGM:disable()`.
-- `sys_boot.lua` plays `bootSound` only if linked; the link is empty in `sys_boot.scn` in both packages checked.
-- The Shonen firmware calls `bootBGM:disable()` at the start of `Main.start`.
-- Engine behaviour on a component with no native sound object (SNES): `isPlaying` returns false and
-  `getSamplePosition` returns `0.0`, neither raises an error. A scene with `bootBGM` disabled therefore gives the same
-  result as the Shonen `disable()` call, as far as the code shows.
+Details in [Boot music](boot-music.md). In short:
+
+- `defaultscene.scn` has several `SoundComponent`s on `Main`; the first is `Main.bootBGM` (`/sounds/hvc/bgm_boot.wav`,
+  `autoPlay: false`), identical in the HVC, NES, SNES and Shonen stock UI packages.
+- `Main.start` plays it with `getComponent(SoundComponent):play()`. `Main.update` then starts the main music when
+  `not bootBGM:isPlaying()` and calls `bootBGM:disable()`.
+- The Shonen firmware calls `bootBGM:disable()` at the start of `Main.start`; the play call that follows does nothing.
+- Engine side (SNES): `play()` only plays when the component has a native sound object and is enabled, otherwise it
+  returns 0; `isPlaying` is false and `getSamplePosition` is 0.0 without a native object; none raises an error.
+  A disabled `bootBGM` is therefore silent in any family, as the Shonen firmware shows at run time.
 
 ### 8.2 Palettes (`colors_*.lua`)
 
@@ -346,8 +347,8 @@ SNES EUR and USA are the same engine: identical API, 3053 of 3058 function bodie
 
 - Which process writes the eventfds that the 20 s wait watches, and what the menu does during those 20 s.
 - The splash source of the SNES inlined running and shutdown states (by the NES layout: `Errors.Unknown`).
-- Whether a component loaded with `enabled: false` in the scene has no native sound object, and that nothing
-  re-enables it (section 8.1); not tested on a console.
+- Whether `enabled: false` in a scene reaches the same state as the run-time `disable()` call on a `SoundComponent`
+  (section 8.1); not tested on a console.
 - Whether the larger bytecode of recent LuaJIT builds loads on a console; the reader of `worldUnitsPerMeter` and
   `gravity`; the component that reads the `stream` boolean.
 
