@@ -11,17 +11,17 @@
 
 | Method | Signature | Families | Binding S / N / J | Summary |
 |---|---|---|---|---|
-| `addChildNode` | `WorldNode:addChildNode(arg1: any): number` | SNJ | `b1730 / f6110 / eff18` | Calls add child node. |
-| `addHierarchyToNode` | `WorldNode:addHierarchyToNode(arg1: any): number` | SNJ | `af458 / f5cb0 / efdb4` | Calls add hierarchy to node. |
-| `addHierarchyToRoot` | `WorldNode:addHierarchyToRoot(): number` | SNJ | `af4d0 / dbe50 / efe2c` | Calls add hierarchy to root. |
-| `attachComponent` | `WorldNode:attachComponent(arg1: any): number` | SNJ | `b13ac / f326c / f1c24` | Calls attach component. |
-| `attachToWorld` | `WorldNode:attachToWorld(): number` | SNJ | `af53c / dc0d8 / efe98` | Calls attach to world. |
-| `create` | `WorldNode:create(...)` | SNJ | `b19c8 / 115450 / f2124` | Calls create. |
-| `destroy` | `WorldNode:destroy()` | SNJ | `af8b8 / dc4d8 / f02a4` | Calls destroy. |
-| `detachComponent` | `WorldNode:detachComponent(arg1: any): number` | SNJ | `b10ec / f6880 / f19d4` | Calls detach component. |
-| `detachFromWorld` | `WorldNode:detachFromWorld(): number` | SNJ | `af3cc / dbf78 / efd2c` | Calls detach from world. |
-| `disable` | `WorldNode:disable()` | SNJ | `b0d90 / ddfb4 / f1678` | Calls disable. |
-| `enable` | `WorldNode:enable()` | SNJ | `b0df0 / de0a0 / f16d8` | Calls enable. |
+| `addChildNode` | `WorldNode:addChildNode(arg1: any): number` | SNJ | `b1730 / f6110 / eff18` | Not described (name only). |
+| `addHierarchyToNode` | `WorldNode:addHierarchyToNode(arg1: any): number` | SNJ | `af458 / f5cb0 / efdb4` | Not described (name only). |
+| `addHierarchyToRoot` | `WorldNode:addHierarchyToRoot(): number` | SNJ | `af4d0 / dbe50 / efe2c` | Not described (name only). |
+| `attachComponent` | `WorldNode:attachComponent(arg1: any): number` | SNJ | `b13ac / f326c / f1c24` | Not described (name only). |
+| `attachToWorld` | `WorldNode:attachToWorld(): number` | SNJ | `af53c / dc0d8 / efe98` | Not described (name only). |
+| `create` | `WorldNode:create(...)` | SNJ | `b19c8 / 115450 / f2124` | Not described (name only). |
+| `destroy` | `WorldNode:destroy()` | SNJ | `af8b8 / dc4d8 / f02a4` | Not described (name only). |
+| `detachComponent` | `WorldNode:detachComponent(arg1: any): number` | SNJ | `b10ec / f6880 / f19d4` | Not described (name only). |
+| `detachFromWorld` | `WorldNode:detachFromWorld(): number` | SNJ | `af3cc / dbf78 / efd2c` | Not described (name only). |
+| `disable` | `WorldNode:disable()` | SNJ | `b0d90 / ddfb4 / f1678` | Not described (name only). |
+| `enable` | `WorldNode:enable()` | SNJ | `b0df0 / de0a0 / f16d8` | Not described (name only). |
 | `getAllComponents` | `WorldNode:getAllComponents(): array` | SNJ | `b0ec8 / 1068b4 / f17b0` | Returns the all components. |
 | `getAlpha` | `WorldNode:getAlpha(): number` | SJ | `aeb88 / - / ef394` | Returns the alpha. |
 | `getCategory` | `WorldNode:getCategory(): integer` | SNJ | `aee84 / dc3b0 / ef690` | Returns the category. |
@@ -58,12 +58,12 @@
 | `isSelfEnabled` | `WorldNode:isSelfEnabled(): boolean` | SNJ | `b0cb0 / dde74 / efb50` | Returns whether self enabled. |
 | `isSelfVisible` | `WorldNode:isSelfVisible(): boolean` | SJ | `aed34 / - / ef540` | Returns whether self visible. |
 | `isVisible` | `WorldNode:isVisible(): boolean` | SJ | `aeda0 / - / ef5ac` | Returns whether visible. |
-| `localToWorldDirection` | `WorldNode:localToWorldDirection(arg1: number, arg2: number): (number, number)` | SNJ | `afa10 / dc798 / f03fc` | Calls local to world direction. |
-| `localToWorldPosition` | `WorldNode:localToWorldPosition(arg1: number, arg2: number): (number, number)` | SNJ | `afbc4 / dc88c / f0714` | Calls local to world position. |
-| `removeChildNode` | `WorldNode:removeChildNode(arg1: any): number` | SNJ | `b1944 / f5ec0 / efc30` | Calls remove child node. |
-| `removeHierarchy` | `WorldNode:removeHierarchy(): number` | SNJ | `af344 / f14c0 / efcb4` | Calls remove hierarchy. |
-| `rotate` | `WorldNode:rotate(arg1: number)` | SNJ | `b0178 / dd14c / f0ddc` | Calls rotate. |
-| `scale` | `WorldNode:scale(arg1: number, arg2: number)` | SNJ | `aff18 / dcce4 / f0b7c` | Calls scale. |
+| `localToWorldDirection` | `WorldNode:localToWorldDirection(arg1: number, arg2: number): (number, number)` | SNJ | `afa10 / dc798 / f03fc` | Not described (name only). |
+| `localToWorldPosition` | `WorldNode:localToWorldPosition(arg1: number, arg2: number): (number, number)` | SNJ | `afbc4 / dc88c / f0714` | Not described (name only). |
+| `removeChildNode` | `WorldNode:removeChildNode(arg1: any): number` | SNJ | `b1944 / f5ec0 / efc30` | Not described (name only). |
+| `removeHierarchy` | `WorldNode:removeHierarchy(): number` | SNJ | `af344 / f14c0 / efcb4` | Not described (name only). |
+| `rotate` | `WorldNode:rotate(arg1: number)` | SNJ | `b0178 / dd14c / f0ddc` | Not described (name only). |
+| `scale` | `WorldNode:scale(arg1: number, arg2: number)` | SNJ | `aff18 / dcce4 / f0b7c` | Not described (name only). |
 | `setAlpha` | `WorldNode:setAlpha(alpha: number)` | SJ | `af5bc / - / eff9c` | Sets the alpha. |
 | `setCategory` | `WorldNode:setCategory(category: integer)` | SNJ | `aee18 / dc350 / ef624` | Sets the category. |
 | `setColor` | `WorldNode:setColor(arg1: number, arg2: number, arg3: number, arg4: number)` | SJ | `af634 / - / f0014` | Sets the color. |
@@ -84,9 +84,9 @@
 | `setWorldTransform` | `WorldNode:setWorldTransform(arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number)` | SNJ | `b08bc / dd93c / f14a0` | Sets the world transform. |
 | `setWorldZIndex` | `WorldNode:setWorldZIndex(worldZIndex: integer)` | SNJ | `afc80 / dc990 / f07d0` | Sets the world zindex. |
 | `setZIndex` | `WorldNode:setZIndex(zIndex: integer)` | SNJ | `afd04 / dca94 / f0854` | Sets the zindex. |
-| `translate` | `WorldNode:translate(arg1: number, arg2: number)` | SNJ | `b0344 / dd3f4 / f0fa8` | Calls translate. |
-| `worldToLocalDirection` | `WorldNode:worldToLocalDirection(arg1: number, arg2: number): (number, number)` | SNJ | `af914 / dc530 / f0300` | Calls world to local direction. |
-| `worldToLocalPosition` | `WorldNode:worldToLocalPosition(arg1: number, arg2: number): (number, number)` | SNJ | `afb08 / dc64c / f0658` | Calls world to local position. |
+| `translate` | `WorldNode:translate(arg1: number, arg2: number)` | SNJ | `b0344 / dd3f4 / f0fa8` | Not described (name only). |
+| `worldToLocalDirection` | `WorldNode:worldToLocalDirection(arg1: number, arg2: number): (number, number)` | SNJ | `af914 / dc530 / f0300` | Not described (name only). |
+| `worldToLocalPosition` | `WorldNode:worldToLocalPosition(arg1: number, arg2: number): (number, number)` | SNJ | `afb08 / dc64c / f0658` | Not described (name only). |
 
 ## How to read the tables
 
@@ -96,7 +96,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

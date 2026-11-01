@@ -11,7 +11,7 @@
 
 | Method | Signature | Families | Binding S / N / J | Summary |
 |---|---|---|---|---|
-| `create` | `LabelComponent:create(...)` | SNJ | `a79e8 / 114d70 / e85b0` | Calls create. |
+| `create` | `LabelComponent:create(...)` | SNJ | `a79e8 / 114d70 / e85b0` | Not described (name only). |
 | `getBottomColor` | `LabelComponent:getBottomColor(): (number, number, number, number)` | SNJ | `aa644 / db49c / ea9e4` | Returns the bottom color. |
 | `getCharacterSpacingOffset` | `LabelComponent:getCharacterSpacingOffset(): integer` | SNJ | `aaab4 / e06fc / eae54` | Returns the character spacing offset. |
 | `getFlags` | `LabelComponent:getFlags(): number` | SNJ | `aacdc / db038 / eb07c` | Returns the flags. |
@@ -28,8 +28,8 @@
 | `hasShadow` | `LabelComponent:hasShadow(): boolean` | SNJ | `aa424 / e08b0 / ea7c4` | Returns whether shadow. |
 | `hasWordWrap` | `LabelComponent:hasWordWrap(): boolean` | SNJ | `aabf8 / e05d4 / eaf98` | Returns whether word wrap. |
 | `isMonospaced` | `LabelComponent:isMonospaced(): boolean` | SNJ | `aa488 / e0814 / ea828` | Returns whether monospaced. |
-| `refreshText` | `LabelComponent:refreshText()` | SNJ | `ab28c / 10115c / eb62c` | Calls refresh text. |
-| `refreshTextAll` | `LabelComponent:refreshTextAll(...)` | SNJ | `ab2f4 / e8b24 / eb694` | Calls refresh text all. |
+| `refreshText` | `LabelComponent:refreshText()` | SNJ | `ab28c / 10115c / eb62c` | Not described (name only). |
+| `refreshTextAll` | `LabelComponent:refreshTextAll(...)` | SNJ | `ab2f4 / e8b24 / eb694` | Not described (name only). |
 | `setBottomColor` | `LabelComponent:setBottomColor(arg1: number, arg2: number, arg3: number, arg4: number)` | SNJ | `aa588 / db528 / ea928` | Sets the bottom color. |
 | `setCharacterSpacingOffset` | `LabelComponent:setCharacterSpacingOffset(characterSpacingOffset: integer)` | SNJ | `aaa3c / db18c / eaddc` | Sets the character spacing offset. |
 | `setFlags` | `LabelComponent:setFlags(flags: integer)` | SNJ | `aac64 / db0a0 / eb004` | Sets the flags. |
@@ -56,7 +56,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

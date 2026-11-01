@@ -35,7 +35,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls anim ended.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaca44",
@@ -61,7 +61,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls change animation.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xacb98",
@@ -82,7 +82,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xac3ec",
@@ -153,7 +153,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls increase time.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xacda0",
@@ -266,7 +266,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls restart.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xacab0",
@@ -424,7 +424,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls advance current time.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa84b0",
@@ -454,7 +454,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls call event handlers.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa82a8",
@@ -475,7 +475,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa78a0",
@@ -699,7 +699,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls play.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa7ea0",
@@ -720,7 +720,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls replay.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8450",
@@ -741,7 +741,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls reset.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa83f8",
@@ -762,7 +762,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls resolve bindings.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa83a0",
@@ -913,7 +913,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls stop.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa7e48",
@@ -936,7 +936,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls abort.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -968,7 +968,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls capture screen.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1fe8",
@@ -997,8 +997,8 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls event fd read.",
-   "note": "",
+   "summary": "Not described (name only).",
+   "note": "Blocking read of an eventfd. The stock scripts call it as eventFdRead(WAIT_TRANSITION_FD) and print the two values it returns.",
    "families": {
     "SNES": "0xb2d58",
     "NES": null,
@@ -1029,8 +1029,8 @@
     "integer"
    ],
    "typed": true,
-   "summary": "Calls event fd write.",
-   "note": "",
+   "summary": "Not described (name only).",
+   "note": "Writes a value to an eventfd. The stock scripts call it as eventFdWrite(fd, 1) with the START, FINISH and WAIT transition descriptors the supervisor passes in.",
    "families": {
     "SNES": "0xb2cdc",
     "NES": null,
@@ -1050,7 +1050,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls exit.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb2de4",
@@ -1188,7 +1188,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls pause.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1fa0",
@@ -1209,7 +1209,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls reset error handler.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -1230,7 +1230,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls reset exit handler.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa29cc",
@@ -1328,7 +1328,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls skip draw.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1e4c",
@@ -1349,7 +1349,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls unpause.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1f5c",
@@ -1379,7 +1379,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls hash.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb31b0",
@@ -1455,7 +1455,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa7944",
@@ -1730,7 +1730,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls screen to world position.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa9df8",
@@ -1995,7 +1995,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls world to screen position.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa9cb8",
@@ -2142,7 +2142,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls start.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -2163,7 +2163,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls stop.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -2186,7 +2186,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8cd8",
@@ -2425,7 +2425,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls hit test.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8df4",
@@ -2453,7 +2453,7 @@
     "array"
    ],
    "typed": true,
-   "summary": "Calls raycast all.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8ab8",
@@ -2485,7 +2485,7 @@
     "array"
    ],
    "typed": true,
-   "summary": "Calls raycast all in categories.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8964",
@@ -2511,7 +2511,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls raycast nearest.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8be4",
@@ -2541,7 +2541,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls raycast nearest in categories.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa8d5c",
@@ -2775,7 +2775,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls disable.",
+   "summary": "Not described (name only).",
    "note": "Disables the component. The boot music (Main.bootBGM) is disabled this way by main.lua and by the Shonen firmware.",
    "families": {
     "SNES": "0xb1a90",
@@ -2796,7 +2796,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls enable.",
+   "summary": "Not described (name only).",
    "note": "Enables the component.",
    "families": {
     "SNES": "0xb1aec",
@@ -2963,7 +2963,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls concat.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -3070,7 +3070,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls normalize.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -3098,7 +3098,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls cleanup path.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5acc",
@@ -3130,7 +3130,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls copy directory.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa518c",
@@ -3170,7 +3170,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls copy directory async.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa4e14",
@@ -3193,7 +3193,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls copy file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa69d0",
@@ -3241,7 +3241,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls copy file async.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa4f60",
@@ -3269,7 +3269,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls create directory.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa52d0",
@@ -3297,7 +3297,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls delete directory.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa524c",
@@ -3325,7 +3325,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls delete file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa53e4",
@@ -3353,7 +3353,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls directory exists.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa535c",
@@ -3381,7 +3381,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls file exists.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5b64",
@@ -3407,7 +3407,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls list directories.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa589c",
@@ -3433,7 +3433,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls list directory files.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5a00",
@@ -3463,7 +3463,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls list directory files by ext.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5930",
@@ -3489,7 +3489,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls read file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa569c",
@@ -3521,7 +3521,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls rename directory.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa50dc",
@@ -3553,7 +3553,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls rename file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5468",
@@ -3585,7 +3585,7 @@
     "boolean"
    ],
    "typed": true,
-   "summary": "Calls write file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5534",
@@ -3752,7 +3752,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls read pixel.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -3775,7 +3775,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls reload from file.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa3678",
@@ -3798,7 +3798,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls freeze.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa2988",
@@ -4028,7 +4028,7 @@
     "integer"
    ],
    "typed": true,
-   "summary": "Calls touch to view point.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -4051,7 +4051,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa79e8",
@@ -4451,7 +4451,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls refresh text.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xab28c",
@@ -4472,7 +4472,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls refresh text all.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xab2f4",
@@ -5073,7 +5073,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls reload strings.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa3280",
@@ -5128,7 +5128,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls use user locale.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa32d8",
@@ -5151,7 +5151,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xac534",
@@ -5473,7 +5473,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls load resource configuration.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1d78",
@@ -5494,7 +5494,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls synchronize.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1de8",
@@ -5517,7 +5517,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls instantiate.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa86d4",
@@ -5565,7 +5565,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xac5d8",
@@ -5588,7 +5588,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls close native device.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb3174",
@@ -5609,7 +5609,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa77fc",
@@ -6019,7 +6019,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls pause.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa76ec",
@@ -6042,7 +6042,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls play.",
+   "summary": "Not described (name only).",
    "note": "Plays only when the component has a native sound object and is enabled (the virtual isEnabled returns true); otherwise it returns 0 and does nothing, without an error. Returns the playback handle as a number.",
    "families": {
     "SNES": "0xa7790",
@@ -6076,7 +6076,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls play one shot.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa5f70",
@@ -6425,7 +6425,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls stop.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa7688",
@@ -6448,7 +6448,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa3aa0",
@@ -6567,7 +6567,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xac490",
@@ -6703,7 +6703,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls reset size.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xad14c",
@@ -6984,7 +6984,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xac348",
@@ -7122,7 +7122,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls reset size.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xabe14",
@@ -7534,7 +7534,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xa7a8c",
@@ -7719,7 +7719,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls close.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7740,7 +7740,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7892,7 +7892,7 @@
    ],
    "returns": [],
    "typed": false,
-   "summary": "Calls open.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7913,7 +7913,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls pause.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7934,7 +7934,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls play.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7955,7 +7955,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls resume.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -7981,7 +7981,7 @@
    ],
    "returns": [],
    "typed": false,
-   "summary": "Calls seek.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -8007,7 +8007,7 @@
    ],
    "returns": [],
    "typed": false,
-   "summary": "Calls seek as seconds.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -8110,7 +8110,7 @@
    "params": [],
    "returns": [],
    "typed": false,
-   "summary": "Calls stop.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -9082,7 +9082,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls mount data volume.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": null,
@@ -9112,7 +9112,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls add child node.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1730",
@@ -9140,7 +9140,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls add hierarchy to node.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf458",
@@ -9163,7 +9163,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls add hierarchy to root.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf4d0",
@@ -9191,7 +9191,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls attach component.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb13ac",
@@ -9214,7 +9214,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls attach to world.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf53c",
@@ -9235,7 +9235,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls create.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb19c8",
@@ -9256,7 +9256,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls destroy.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf8b8",
@@ -9284,7 +9284,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls detach component.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb10ec",
@@ -9307,7 +9307,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls detach from world.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf3cc",
@@ -9328,7 +9328,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls disable.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb0d90",
@@ -9349,7 +9349,7 @@
    "params": [],
    "returns": [],
    "typed": true,
-   "summary": "Calls enable.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb0df0",
@@ -10231,7 +10231,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls local to world direction.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xafa10",
@@ -10264,7 +10264,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls local to world position.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xafbc4",
@@ -10292,7 +10292,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls remove child node.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb1944",
@@ -10315,7 +10315,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls remove hierarchy.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf344",
@@ -10341,7 +10341,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls rotate.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb0178",
@@ -10371,7 +10371,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls scale.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaff18",
@@ -10980,7 +10980,7 @@
    ],
    "returns": [],
    "typed": true,
-   "summary": "Calls translate.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xb0344",
@@ -11013,7 +11013,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls world to local direction.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xaf914",
@@ -11046,7 +11046,7 @@
     "number"
    ],
    "typed": true,
-   "summary": "Calls world to local position.",
+   "summary": "Not described (name only).",
    "note": "",
    "families": {
     "SNES": "0xafb08",

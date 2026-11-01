@@ -11,8 +11,8 @@
 
 | Method | Signature | Families | Binding S / N / J | Summary |
 |---|---|---|---|---|
-| `disable` | `Component:disable()` | SNJ | `b1a90 / f38b4 / f21f4` | Calls disable. |
-| `enable` | `Component:enable()` | SNJ | `b1aec / f3564 / f2250` | Calls enable. |
+| `disable` | `Component:disable()` | SNJ | `b1a90 / f38b4 / f21f4` | Not described (name only). |
+| `enable` | `Component:enable()` | SNJ | `b1aec / f3564 / f2250` | Not described (name only). |
 | `getNode` | `Component:getNode()` | SNJ | `b1628 / f4164 / f1f34` | Returns the node. |
 | `getTypeName` | `Component:getTypeName(): string` | SNJ | `b1bbc / f4304 / f1bb0` | Returns the type name. |
 | `isActive` | `Component:isActive(): boolean` | SNJ | `b1170 / f3f9c / f1a58` | Returns whether active. |
@@ -33,7 +33,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

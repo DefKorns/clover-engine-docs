@@ -40,7 +40,7 @@ such wait.
 
 - That the timeout path ends on the `Errors.Unknown` image: in the SNES build the splash source of that inlined code was
   not resolved. By the NES layout it should.
-- What the menu does during the 20 s, and which process writes the eventfd.
+- Which of the three transition eventfds each `select()` watches. The engine's Lua layer is the writer (see [Supervisor](supervisor.md#who-writes-the-transition-eventfds)).
 - The game scan (`menu.titles.lua`) has no time limit of its own; a longer list only matters through the time the menu
   needs to load it.
 - No allocation-failure path was found that maps to these screens. That is absence of evidence.

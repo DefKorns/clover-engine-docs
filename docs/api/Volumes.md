@@ -18,7 +18,7 @@
 | `getTempPath` | `Volumes:getTempPath(...)` | J | `- / - / f253c` | Returns the temp path. |
 | `getUserPath` | `Volumes:getUserPath(...)` | J | `- / - / f25b0` | Returns the user path. |
 | `isVolumeMounted` | `Volumes:isVolumeMounted(): boolean` | J | `- / - / f2824` | Returns whether volume mounted. |
-| `mountDataVolume` | `Volumes:mountDataVolume(arg1: string): number` | J | `- / - / f2880` | Calls mount data volume. |
+| `mountDataVolume` | `Volumes:mountDataVolume(arg1: string): number` | J | `- / - / f2880` | Not described (name only). |
 
 ## How to read the tables
 
@@ -28,7 +28,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

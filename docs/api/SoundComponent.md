@@ -11,8 +11,8 @@
 
 | Method | Signature | Families | Binding S / N / J | Summary |
 |---|---|---|---|---|
-| `closeNativeDevice` | `SoundComponent:closeNativeDevice(...)` | SJ | `b3174 / - / f3bf4` | Calls close native device. |
-| `create` | `SoundComponent:create(...)` | SNJ | `a77fc / 114c10 / e70d8` | Calls create. |
+| `closeNativeDevice` | `SoundComponent:closeNativeDevice(...)` | SJ | `b3174 / - / f3bf4` | Not described (name only). |
+| `create` | `SoundComponent:create(...)` | SNJ | `a77fc / 114c10 / e70d8` | Not described (name only). |
 | `getMasterVolume` | `SoundComponent:getMasterVolume(...): number` | SNJ | `b3110 / b3e68 / f3b90` | Returns the master volume. |
 | `getMaxDistance` | `SoundComponent:getMaxDistance(): number` | SNJ | `a3c10 / 102e6c / e3434` | Returns the max distance. |
 | `getMinDistance` | `SoundComponent:getMinDistance(): number` | SNJ | `a3c78 / 102b64 / e349c` | Returns the min distance. |
@@ -30,9 +30,9 @@
 | `isPlaying` | `SoundComponent:isPlaying(): boolean` | SNJ | `a75e4 / 1019ac / e4018` | Returns whether playing. |
 | `isPositional` | `SoundComponent:isPositional(): boolean` | SNJ | `a3ce0 / 103310 / e3504` | Returns whether positional. |
 | `isStoppedWhenDisabled` | `SoundComponent:isStoppedWhenDisabled(): boolean` | SNJ | `a3b44 / 103844 / e3368` | Returns whether stopped when disabled. |
-| `pause` | `SoundComponent:pause()` | SNJ | `a76ec / 1027b4 / e4120` | Calls pause. |
-| `play` | `SoundComponent:play(): number` | SNJ | `a7790 / d5428 / e41c4` | Calls play. |
-| `playOneShot` | `SoundComponent:playOneShot(arg1: number, arg2: number, arg3: number)` | SNJ | `a5f70 / e7a7c / e3270` | Calls play one shot. |
+| `pause` | `SoundComponent:pause()` | SNJ | `a76ec / 1027b4 / e4120` | Not described (name only). |
+| `play` | `SoundComponent:play(): number` | SNJ | `a7790 / d5428 / e41c4` | Not described (name only). |
+| `playOneShot` | `SoundComponent:playOneShot(arg1: number, arg2: number, arg3: number)` | SNJ | `a5f70 / e7a7c / e3270` | Not described (name only). |
 | `setAutoPlay` | `SoundComponent:setAutoPlay(autoPlay: boolean)` | SNJ | `a3d44 / 101d94 / e3568` | Sets the auto play. |
 | `setLoop` | `SoundComponent:setLoop(loop: boolean)` | SNJ | `a4384 / d5a70 / e3d24` | Sets the loop. |
 | `setMasterVolume` | `SoundComponent:setMasterVolume()` | SNJ | `b3098 / e8718 / f3b18` | Sets the master volume. |
@@ -46,7 +46,7 @@
 | `setSoundResource` | `SoundComponent:setSoundResource(soundResource: SoundResource)` | SNJ | `a6068 / d57c0 / e3d94` | Sets the sound resource. |
 | `setStopWhenDisabled` | `SoundComponent:setStopWhenDisabled(stopWhenDisabled: boolean)` | SNJ | `a3ba8 / 101bd4 / e33cc` | Sets the stop when disabled. |
 | `setVolume` | `SoundComponent:setVolume(volume: number)` | SNJ | `a4310 / d5c00 / e3cb0` | Sets the volume. |
-| `stop` | `SoundComponent:stop()` | SNJ | `a7688 / 103174 / e40bc` | Calls stop. |
+| `stop` | `SoundComponent:stop()` | SNJ | `a7688 / 103174 / e40bc` | Not described (name only). |
 
 ## Notes
 
@@ -63,7 +63,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

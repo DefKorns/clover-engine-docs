@@ -109,3 +109,21 @@ In the SNES and Shonen supervisors the menu to game and game to menu transitions
 `select()` for **20 000 000 microseconds (20 s)** (`FUN_0001d710(fd, 20000000)` in SNES `0x17860`; `FUN_0001dce0` in
 Shonen `0x17d40`). A timeout records the matching `TRANSITION TIMEOUT` message. The NES supervisor has no such wait; its
 2 000 000 000 ns values are 2 s shutdown timeouts.
+
+### Who writes the transition eventfds
+
+The supervisor creates three eventfds and passes their numbers to the engine in the shared state file as
+`WAIT_TRANSITION_FD`, `START_TRANSITION_FD` and `FINISH_TRANSITION_FD` (written by `0x1df18` in Shonen, only when
+transitions are enabled). The engine's Lua layer then drives them through `Application.eventFdRead` and
+`Application.eventFdWrite` (script `mcp_commands.lua`, read from the SNES EUR 2.0.14 scripts):
+
+| Lua function | Eventfd operation | Called from |
+|---|---|---|
+| `mcp.waitTransition` | blocking `eventFdRead(WAIT_TRANSITION_FD)` | `sys_boot`, once the textures are loaded (or a boot timeout passes) and the boot fade is not pending |
+| `mcp.startTransition` | `eventFdWrite(START_TRANSITION_FD, 1)` | at the end of `mcp.write_command`, right after the command file is written atomically |
+| `mcp.finishTransition` | `eventFdWrite(FINISH_TRANSITION_FD, 1)`, then `eventFdWrite(WAIT_TRANSITION_FD, 1)` unless the app is exiting | `sys_boot.stop` |
+
+So the writer is the engine, not the supervisor: a menu that has written a command (for example `start-game`, followed by
+`Application.exit`) signals START, and the next UI's boot script signals FINISH when it stops. If the process on the other
+side never writes, the supervisor's 20 s wait expires. Not verified: which of the three descriptors each `select()` in the
+supervisor watches, and what happens on the engine side when the supervisor passes no descriptors.

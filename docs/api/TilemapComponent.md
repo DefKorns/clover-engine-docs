@@ -11,7 +11,7 @@
 
 | Method | Signature | Families | Binding S / N / J | Summary |
 |---|---|---|---|---|
-| `create` | `TilemapComponent:create(...)` | SNJ | `a7a8c / 114e20 / e8658` | Calls create. |
+| `create` | `TilemapComponent:create(...)` | SNJ | `a7a8c / 114e20 / e8658` | Not described (name only). |
 | `getTileGridSize` | `TilemapComponent:getTileGridSize(): (integer, integer)` | SNJ | `ab6d4 / f57fc / eba6c` | Returns the tile grid size. |
 | `getTileSizeScreen` | `TilemapComponent:getTileSizeScreen(): (number, number)` | SNJ | `ab8d8 / f568c / ebc70` | Returns the tile size screen. |
 | `getTileSizeTexture` | `TilemapComponent:getTileSizeTexture(): (number, number)` | SNJ | `ab7d0 / f551c / ebb68` | Returns the tile size texture. |
@@ -27,7 +27,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 

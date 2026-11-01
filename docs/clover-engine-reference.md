@@ -345,7 +345,7 @@ SNES EUR and USA are the same engine: identical API, 3053 of 3058 function bodie
 
 ## 11. Open questions
 
-- Which process writes the eventfds that the 20 s wait watches, and what the menu does during those 20 s.
+- Which of the three transition eventfds each 20 s `select()` watches. Their writer is known: the engine's Lua layer (`mcp.startTransition`, `mcp.finishTransition`), see [supervisor.md](supervisor.md#who-writes-the-transition-eventfds).
 - The splash source of the SNES inlined running and shutdown states (by the NES layout: `Errors.Unknown`).
 - Whether `enabled: false` in a scene reaches the same state as the run-time `disable()` call on a `SoundComponent`
   (section 8.1); not tested on a console.

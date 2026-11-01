@@ -16,8 +16,8 @@
 | `setEffect` | `CameraDevice:setEffect(1 args)` | N | `- / b43e0 / -` | Sets the effect. |
 | `setFramerate` | `CameraDevice:setFramerate(1 args)` | N | `- / b4300 / -` | Sets the framerate. |
 | `setResolution` | `CameraDevice:setResolution(2 args)` | N | `- / b4218 / -` | Sets the resolution. |
-| `start` | `CameraDevice:start(0 args)` | N | `- / b3fc8 / -` | Calls start. |
-| `stop` | `CameraDevice:stop(0 args)` | N | `- / b40f0 / -` | Calls stop. |
+| `start` | `CameraDevice:start(0 args)` | N | `- / b3fc8 / -` | Not described (name only). |
+| `stop` | `CameraDevice:stop(0 args)` | N | `- / b40f0 / -` | Not described (name only). |
 
 ## How to read the tables
 
@@ -27,7 +27,7 @@
   signature lists only the argument count.
 - **Families**: S = SNES (EUR, USA, SHVC), N = NES and HVC, J = Shonen. A dash means the family does not bind the method.
 - **Binding**: address of the binding function in the SNES EUR 2.0.14, NES 1.0.7 and Shonen 3.0.1 builds.
-- **Summary**: derived from the method name. A **Note** was verified in the code.
+- **Summary**: derived from the method name (getters and setters only); "Not described (name only)" means nothing beyond the name is known. A **Note** was verified in the code or in the stock scripts.
 - Parameter names are not in the binary: single-argument setters use the name after `set`, the others are `argN`.
 
 
