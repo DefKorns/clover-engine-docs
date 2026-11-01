@@ -7718,9 +7718,9 @@
    "args": 0,
    "params": [],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xf16c8",
@@ -7759,10 +7759,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "number"
+   ],
+   "typed": true,
    "summary": "Returns the current time.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfbf50",
@@ -7780,10 +7782,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "number"
+   ],
+   "typed": true,
    "summary": "Returns the current time as seconds.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfa278",
@@ -7801,10 +7805,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "number"
+   ],
+   "typed": true,
    "summary": "Returns the length.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfbdc8",
@@ -7822,10 +7828,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "number"
+   ],
+   "typed": true,
    "summary": "Returns the length as seconds.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfa400",
@@ -7843,10 +7851,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "number"
+   ],
+   "typed": true,
    "summary": "Returns the state.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfd038",
@@ -7864,10 +7874,12 @@
    "static": false,
    "args": 0,
    "params": [],
-   "returns": [],
-   "typed": false,
+   "returns": [
+    "boolean"
+   ],
+   "typed": true,
    "summary": "Returns whether auto play.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfc41c",
@@ -7912,9 +7924,9 @@
    "args": 0,
    "params": [],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfea58",
@@ -7933,9 +7945,9 @@
    "args": 0,
    "params": [],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfe8d4",
@@ -7954,9 +7966,9 @@
    "args": 0,
    "params": [],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfe5cc",
@@ -7976,13 +7988,13 @@
    "params": [
     {
      "name": "arg1",
-     "type": "any"
+     "type": "integer"
     }
    ],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfbc50",
@@ -8002,13 +8014,13 @@
    "params": [
     {
      "name": "arg1",
-     "type": "any"
+     "type": "number"
     }
    ],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfb954",
@@ -8028,13 +8040,13 @@
    "params": [
     {
      "name": "autoPlay",
-     "type": "any"
+     "type": "boolean"
     }
    ],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Sets the auto play.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfb124",
@@ -8054,13 +8066,13 @@
    "params": [
     {
      "name": "autoresize",
-     "type": "any"
+     "type": "boolean"
     }
    ],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Sets the autoresize.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfaf64",
@@ -8080,17 +8092,17 @@
    "params": [
     {
      "name": "arg1",
-     "type": "any"
+     "type": "number"
     },
     {
      "name": "arg2",
-     "type": "any"
+     "type": "number"
     }
    ],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Sets the size.",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xf87ec",
@@ -8109,9 +8121,9 @@
    "args": 0,
    "params": [],
    "returns": [],
-   "typed": false,
+   "typed": true,
    "summary": "Not described (name only).",
-   "note": "",
+   "note": "Types read by hand from the NES binding. The NES build inlines result pushes, so the automatic matching could not type it.",
    "families": {
     "SNES": null,
     "NES": "0xfe750",
